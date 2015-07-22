@@ -14,6 +14,8 @@
 #import "BackyardClient.h"
 #import "Employee.h"
 #import "InvisibleButtonDelegate.h"
+#import <SDWebImage/SDWebImageManager.h>
+
 
 @interface RotationVC ()  <UICollectionViewDataSource, UICollectionViewDelegate, UIScrollViewDelegate, InvisibleButtonDelegate>
 @property (strong, nonatomic) FriendsView *friendsView;
@@ -26,6 +28,9 @@
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *upSwipe;
 @property (assign, nonatomic) BOOL isDragging;
 @property (assign, nonatomic) CGRect friendsViewFrame;
+@property (strong, nonatomic) UIImage *backgroundImage;
+@property (strong, nonatomic) UIImageView *bgView;
+
 @end
 
 @implementation RotationVC
@@ -79,11 +84,11 @@ static NSString * const reuseIdentifier = @"Cell";
 
     //add background view
     CGRect bgFrame = CGRectMake(-40, 0, self.rotationCollectionView.frame.size.width+40, self.rotationCollectionView.frame.size.height);
-    UIView *bgView = [[UIView alloc] initWithFrame:bgFrame];
+    self.bgView = [[UIImageView alloc] initWithFrame:bgFrame];
 
     UIImage *bgImg = [self blurryImage:[UIImage imageNamed:@"Img-Background4.png"] withBlurLevel:10];
-    [bgView setBackgroundColor:[[UIColor alloc] initWithPatternImage:bgImg]];
-    [self.view addSubview:bgView];
+    [self.bgView setBackgroundColor:[[UIColor alloc] initWithPatternImage:bgImg]];
+    [self.view addSubview:self.bgView];
    
     /*UIView *bgViewMask = [[UIView alloc] initWithFrame:self.rotationCollectionView.frame];
     [bgViewMask setBackgroundColor:[UIColor whiteColor]];
@@ -291,6 +296,36 @@ static NSString * const reuseIdentifier = @"Cell";
     NSLog(@"byid = %@",[self.employees[index] backyardId]);
     //clear the mask
     self.maskView.backgroundColor = [UIColor clearColor];
+    SDWebImageManager *manager = [SDWebImageManager sharedManager];
+    NSURL *backgroundImageURL = (NSURL *)[NSString stringWithFormat:@"http://build2.adp.corp.tw1.yahoo.com:3000/v1/users/%@/backgroundImage",
+     self.focusedEmployee.backyardId];
+    [manager downloadImageWithURL:backgroundImageURL
+                          options:0
+                         progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+                             // progression tracking code
+                         }
+                        completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+                            if (image) {
+                               
+                                  self.backgroundImage = [self blurryImage:image withBlurLevel:2];
+                                
+                          
+                                    [self.bgView setImage:self.backgroundImage];
+                                   self.bgView.contentMode = UIViewContentModeScaleAspectFill;
+                        
+                                self.bgView.clipsToBounds = YES;
+                                
+                                CATransition *transition = [CATransition animation];
+                                transition.duration = 0.5f;
+                                transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+                                transition.type = kCATransitionFade;
+                                
+                                [self.bgView.layer addAnimation:transition forKey:nil];
+                                
+                                
+                            }
+                        }];
+    
     //call api for contact
     [[BackyardClient sharedInstance] getContactsWithId:[self.employees[index] backyardId] andCompletion:^(NSArray *contacts, NSError *error) {
         //update friends view
@@ -298,6 +333,9 @@ static NSString * const reuseIdentifier = @"Cell";
         self.focusedContacts = [[NSMutableArray alloc] initWithArray: contacts];
 
         self.friendsView = [[FriendsView alloc] init:self.friendsViewFrame cellCount:6 contacts:contacts];
+        if (self.backgroundImage) {
+            [self.friendsView setBackgroundColor:[[UIColor alloc] initWithPatternImage:self.backgroundImage]];
+        }
         self.friendsView.delegate = self;
         [self.view addSubview:self.friendsView];
     }];
