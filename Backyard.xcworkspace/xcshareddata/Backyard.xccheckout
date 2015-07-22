@@ -10,24 +10,40 @@
 	<string>Backyard</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>34310C992CB0E13D287A67256E1C5B63B8A73278</key>
+		<string>github.com:cwnga/yFamily.git</string>
 		<key>5BFECA00C464A7A2B567B3D826AAB5578244599A</key>
 		<string>git.corp.yahoo.com:weichen1/Backyard_iOS.git</string>
+		<key>748E3FD116C1BB19C782AC7EA349EABE71A995F6</key>
+		<string>git.corp.yahoo.com:EC-Mobile/ECAuctionAppIOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Backyard.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5BFECA00C464A7A2B567B3D826AAB5578244599A</key>
+		<key>34310C992CB0E13D287A67256E1C5B63B8A73278</key>
 		<string>..</string>
+		<key>5BFECA00C464A7A2B567B3D826AAB5578244599A</key>
+		<string>../../Backyard_iOS</string>
+		<key>748E3FD116C1BB19C782AC7EA349EABE71A995F6</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>git.corp.yahoo.com:weichen1/Backyard_iOS.git</string>
+	<string>github.com:cwnga/yFamily.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5BFECA00C464A7A2B567B3D826AAB5578244599A</string>
+	<string>34310C992CB0E13D287A67256E1C5B63B8A73278</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>748E3FD116C1BB19C782AC7EA349EABE71A995F6</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
@@ -35,6 +51,14 @@
 			<string>5BFECA00C464A7A2B567B3D826AAB5578244599A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Backyard_iOS</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>34310C992CB0E13D287A67256E1C5B63B8A73278</string>
+			<key>IDESourceControlWCCName</key>
+			<string>yFamily</string>
 		</dict>
 	</array>
 </dict>
