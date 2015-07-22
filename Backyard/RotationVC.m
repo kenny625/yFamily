@@ -315,6 +315,13 @@ static NSString * const reuseIdentifier = @"Cell";
                         
                                 self.bgView.clipsToBounds = YES;
                                 
+                                CATransition *transition = [CATransition animation];
+                                transition.duration = 0.5f;
+                                transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+                                transition.type = kCATransitionFade;
+                                
+                                [self.bgView.layer addAnimation:transition forKey:nil];
+                                
                                 
                             }
                         }];
