@@ -36,7 +36,7 @@ NSInteger const contactLimit = 5;
 
 - (void)getEmployeesWithParams:(NSDictionary*) params completion:(void (^)(NSArray *employees, NSError *error))completion {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:@"http://build2.adp.corp.tw1.yahoo.com:3000/v1/users"
+    [manager GET:@"http://build2.adp.corp.tw1.yahoo.com:3005/v1/users"
       parameters:params
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
              NSArray *result = responseObject[@"result"];
@@ -88,7 +88,7 @@ NSInteger const contactLimit = 5;
 - (void)queryEmployeesWithName:(NSString*)name andCompletion:(void (^)(NSArray *employees, NSError *error))completion {
     NSString *currentpage = [NSString stringWithFormat:@"%ld", self.currentEmployeesPage];
     NSString *limit = [NSString stringWithFormat:@"%ld", employeeLimit];
-    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:currentpage, @"current_page", limit, @"per_page", name, @"name", nil];
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:currentpage, @"current_page", limit, @"per_page", name, @"key", nil];
     [self getEmployeesWithParams:dic completion:^(NSArray *employees, NSError *error) {
         completion(employees, error);
     }];
