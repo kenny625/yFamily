@@ -115,6 +115,7 @@ static NSString * const reuseIdentifier = @"Cell";
     CGPoint velocity = [panGestureRecognizer velocityInView:self.view];
     if (velocity.y > 50) {
         self.navigationItem.titleView = self.searchBar;
+        [self.searchBar becomeFirstResponder];
     }
 }
 
