@@ -15,4 +15,5 @@
 - (void)getPreviousEmployeesWithCompletion:(void (^)(NSArray *employees, NSError *error))completion;
 - (void)postInterestedWithBackyardId:(NSString*)backyardId completion:(void (^)(id response, NSError *error))completion;
 - (void)getContactsWithId:(NSString*) backyardId andCompletion:(void (^)(NSArray *contacts, NSError *error))completion;
+- (void)queryEmployeesWithName:(NSString*)name andCompletion:(void (^)(NSArray *employees, NSError *error))completion;
 @end

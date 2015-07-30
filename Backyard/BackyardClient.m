@@ -85,6 +85,15 @@ NSInteger const contactLimit = 5;
     }];
 }
 
+- (void)queryEmployeesWithName:(NSString*)name andCompletion:(void (^)(NSArray *employees, NSError *error))completion {
+    NSString *currentpage = [NSString stringWithFormat:@"%ld", self.currentEmployeesPage];
+    NSString *limit = [NSString stringWithFormat:@"%ld", employeeLimit];
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:currentpage, @"current_page", limit, @"per_page", name, @"name", nil];
+    [self getEmployeesWithParams:dic completion:^(NSArray *employees, NSError *error) {
+        completion(employees, error);
+    }];
+}
+
 - (void)getNextEmployeesWithCompletion:(void (^)(NSArray *employees, NSError *error))completion {
     self.currentEmployeesPage = self.currentEmployeesPage + 1;
     [self getEmployeesWithCompletion:^(NSArray *employees, NSError *error) {
