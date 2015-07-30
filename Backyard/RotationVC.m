@@ -140,6 +140,26 @@ static NSString * const reuseIdentifier = @"Cell";
     NSLog(@"%@", searchBar.text);
     self.navigationItem.titleView = nil;
     self.navigationItem.title = searchBar.text;
+    [[BackyardClient sharedInstance] queryEmployeesWithName:searchBar.text andCompletion:^(NSArray *employees, NSError *error) {
+        //        employees
+        for (int i=0; i<[employees count]; i++) {
+            self.employees[i] = employees[i];
+        }
+        [self shiftEmployeeData];
+        [self.rotationCollectionView reloadData];
+        
+        //init with index 19
+        [[BackyardClient sharedInstance] getContactsWithId:[self.employees[19] backyardId] andCompletion:^(NSArray *contacts, NSError *error) {
+            //update friends view
+            self.focusedContacts = [[NSMutableArray alloc] initWithArray: contacts];
+            self.friendsView = [[FriendsView alloc] init:self.friendsViewFrame cellCount:6 contacts:contacts];
+            self.friendsView.delegate = self;
+            [self.view addSubview:self.friendsView];
+            //initial and add maskView in front of friendsView
+            self.maskView = [[UIView alloc] initWithFrame:self.friendsViewFrame];
+            [self.view addSubview:self.maskView];
+        }];
+    }];
 }
 
 -(void)viewWillAppear:(BOOL)animated {

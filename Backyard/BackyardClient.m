@@ -36,7 +36,7 @@ NSInteger const contactLimit = 5;
 
 - (void)getEmployeesWithParams:(NSDictionary*) params completion:(void (^)(NSArray *employees, NSError *error))completion {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:@"http://build2.adp.corp.tw1.yahoo.com:3000/v1/users"
+    [manager GET:@"http://build2.adp.corp.tw1.yahoo.com:3003/v1/users"
       parameters:params
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
              NSArray *result = responseObject[@"result"];
@@ -50,7 +50,7 @@ NSInteger const contactLimit = 5;
 
 - (void)getContactsWithParams:(NSDictionary*) params completion:(void (^)(NSArray *contacts, NSError *error))completion {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    NSString *contactUrl = [NSString stringWithFormat:@"http://build2.adp.corp.tw1.yahoo.com:3000/v1/users/%@/contacts", params[@"backyardId"]];
+    NSString *contactUrl = [NSString stringWithFormat:@"http://build2.adp.corp.tw1.yahoo.com:3003/v1/users/%@/contacts", params[@"backyardId"]];
     [manager GET:contactUrl
       parameters:params
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -65,7 +65,7 @@ NSInteger const contactLimit = 5;
 
 - (void)postInterestedWithBackyardId:(NSString*)backyardId completion:(void (^)(id response, NSError *error))completion {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    NSString *positiveUrl = [NSString stringWithFormat:@"http://build2.adp.corp.tw1.yahoo.com:3000/v1/users/%@/positiveRating", backyardId];
+    NSString *positiveUrl = [NSString stringWithFormat:@"http://build2.adp.corp.tw1.yahoo.com:3003/v1/users/%@/positiveRating", backyardId];
     [manager POST:positiveUrl
        parameters:@{@"backyardId": backyardId}
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -80,6 +80,15 @@ NSInteger const contactLimit = 5;
     NSString *currentpage = [NSString stringWithFormat:@"%ld", self.currentEmployeesPage];
     NSString *limit = [NSString stringWithFormat:@"%ld", employeeLimit];
     NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:currentpage, @"current_page", limit, @"per_page", nil];
+    [self getEmployeesWithParams:dic completion:^(NSArray *employees, NSError *error) {
+        completion(employees, error);
+    }];
+}
+
+- (void)queryEmployeesWithName:(NSString*)name andCompletion:(void (^)(NSArray *employees, NSError *error))completion {
+    NSString *currentpage = [NSString stringWithFormat:@"%ld", self.currentEmployeesPage];
+    NSString *limit = [NSString stringWithFormat:@"%ld", employeeLimit];
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:currentpage, @"current_page", limit, @"per_page", name, @"key", nil];
     [self getEmployeesWithParams:dic completion:^(NSArray *employees, NSError *error) {
         completion(employees, error);
     }];
