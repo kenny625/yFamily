@@ -381,6 +381,9 @@ static NSString * const reuseIdentifier = @"Cell";
 - (IBAction)didUpSwipe:(UISwipeGestureRecognizer *)sender {
     //add 1 to the browse count
     self.focusedEmployee.browseCount++;
+    [[BackyardClient sharedInstance] postInterestedWithBackyardId:self.focusedEmployee.backyardId completion:^(id response, NSError *error) {
+        NSLog(@"%@", response);
+    }];
     //present detail view
     NSString *urlStr = [self.focusedEmployee tumblrUrl];
     NSURL *url = [NSURL URLWithString:urlStr];

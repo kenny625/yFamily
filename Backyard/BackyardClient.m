@@ -79,7 +79,7 @@ NSInteger const contactLimit = 5;
 - (void)getEmployeesWithCompletion:(void (^)(NSArray *employees, NSError *error))completion {
     NSString *currentpage = [NSString stringWithFormat:@"%ld", self.currentEmployeesPage];
     NSString *limit = [NSString stringWithFormat:@"%ld", employeeLimit];
-    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:currentpage, @"current_page", limit, @"per_page", nil];
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:currentpage, @"current_page", limit, @"per_page", @"US", @"locale", nil];
     [self getEmployeesWithParams:dic completion:^(NSArray *employees, NSError *error) {
         completion(employees, error);
     }];
