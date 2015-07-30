@@ -15,7 +15,8 @@
 #import "Employee.h"
 #import "InvisibleButtonDelegate.h"
 #import <SDWebImage/SDWebImageManager.h>
-
+#import "SettingTableVC.h"
+#import "AppDelegate.h"
 
 @interface RotationVC ()  <UICollectionViewDataSource, UICollectionViewDelegate, UIScrollViewDelegate, InvisibleButtonDelegate, UISearchBarDelegate>
 @property (strong, nonatomic) FriendsView *friendsView;
@@ -42,38 +43,21 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewDidLoad];
     self.isDragging = YES;
     self.title = @"yFamily";
-
+    //setup setting icon
+    [self setupSettingIcon];
+    
     float width = self.view.frame.size.width;
     float height = self.view.frame.size.height;
     self.friendsViewFrame = CGRectMake(0.0f, 400.0f, width, height-380.0f);
+    
+    
     
     //initial the collecitonView
     self.rotationCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, width, 400.0f) collectionViewLayout:[[RotationLayout alloc] init]];
 
     //call api
-    [[BackyardClient sharedInstance] getEmployeesWithCompletion:^(NSArray *employees, NSError *error) {
-        //        employees
-        self.employees = [[NSMutableArray alloc] initWithArray:employees];
-        [self shiftEmployeeData];
-        [self.rotationCollectionView reloadData];
-        /*
-        [[BackyardClient sharedInstance] getContactsWithId:@"" andCompletion:^(NSArray *contacts, NSError *error) {
-           // get contact
-        }];
-        */
 
-        //init with index 19
-        [[BackyardClient sharedInstance] getContactsWithId:[self.employees[19] backyardId] andCompletion:^(NSArray *contacts, NSError *error) {
-            //update friends view
-            self.focusedContacts = [[NSMutableArray alloc] initWithArray: contacts];
-            self.friendsView = [[FriendsView alloc] init:self.friendsViewFrame cellCount:6 contacts:contacts];
-            self.friendsView.delegate = self;
-            [self.view addSubview:self.friendsView];
-            //initial and add maskView in front of friendsView
-            self.maskView = [[UIView alloc] initWithFrame:self.friendsViewFrame];
-            [self.view addSubview:self.maskView];
-        }];
-    }];
+    
 
     //add background view
     CGRect bgFrame = CGRectMake(-40, 0, self.rotationCollectionView.frame.size.width+40, self.rotationCollectionView.frame.size.height);
@@ -99,7 +83,6 @@ static NSString * const reuseIdentifier = @"Cell";
     swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionUp;
     [self.view addGestureRecognizer:swipeGestureRecognizer];
     
-    
     UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(moveViewWithGestureRecognizer:)];
     [panGestureRecognizer requireGestureRecognizerToFail:swipeGestureRecognizer];
     [self.view addGestureRecognizer:panGestureRecognizer];
@@ -109,6 +92,14 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.searchBar sizeToFit];
     self.searchBar.showsCancelButton = YES;
 
+}
+
+- (void)setupSettingIcon {
+    UIButton *settingButton = [[UIButton alloc] init];
+    [settingButton setBackgroundImage:[UIImage imageNamed:@"Icon-Setting.png"] forState:UIControlStateNormal];
+    [settingButton addTarget:self action:@selector(onTapSettingButton) forControlEvents:UIControlEventTouchUpInside];
+    [settingButton sizeToFit];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:settingButton];
 }
 
 - (void)moveViewWithGestureRecognizer:(UIPanGestureRecognizer*)panGestureRecognizer {
@@ -151,6 +142,29 @@ static NSString * const reuseIdentifier = @"Cell";
 
 -(void)viewWillAppear:(BOOL)animated {
     //update count
+    [[BackyardClient sharedInstance] getEmployeesWithCompletion:^(NSArray *employees, NSError *error) {
+        //        employees
+        self.employees = [[NSMutableArray alloc] initWithArray:employees];
+        [self shiftEmployeeData];
+        [self.rotationCollectionView reloadData];
+        /*
+         [[BackyardClient sharedInstance] getContactsWithId:@"" andCompletion:^(NSArray *contacts, NSError *error) {
+         // get contact
+         }];
+         */
+        
+        //init with index 19
+        [[BackyardClient sharedInstance] getContactsWithId:[self.employees[19] backyardId] andCompletion:^(NSArray *contacts, NSError *error) {
+            //update friends view
+            self.focusedContacts = [[NSMutableArray alloc] initWithArray: contacts];
+            self.friendsView = [[FriendsView alloc] init:self.friendsViewFrame cellCount:6 contacts:contacts];
+            self.friendsView.delegate = self;
+            [self.view addSubview:self.friendsView];
+            //initial and add maskView in front of friendsView
+            self.maskView = [[UIView alloc] initWithFrame:self.friendsViewFrame];
+            [self.view addSubview:self.maskView];
+        }];
+    }];
     [self updateBrowseCount];
     ((RotationCell *)self.focusedCell).countLabel.text = [NSString stringWithFormat:@"%ld", self.focusedEmployee.browseCount];
 }
@@ -259,10 +273,6 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    //It there a better place to set the recognizer??
- //   [scrollView setBackgroundColor:[[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Img-Background.jpg"]]];
-    //无限循环...
-    
     float targetX = scrollView.contentOffset.x;
     int numCount = [self.collectionView numberOfItemsInSection:0];
     float ITEM_WIDTH = scrollView.frame.size.width;
@@ -381,9 +391,11 @@ static NSString * const reuseIdentifier = @"Cell";
 - (IBAction)didUpSwipe:(UISwipeGestureRecognizer *)sender {
     //add 1 to the browse count
     self.focusedEmployee.browseCount++;
+
     [[BackyardClient sharedInstance] postInterestedWithBackyardId:self.focusedEmployee.backyardId completion:^(id response, NSError *error) {
         NSLog(@"%@", response);
     }];
+    
     //present detail view
     NSString *urlStr = [self.focusedEmployee tumblrUrl];
     NSURL *url = [NSURL URLWithString:urlStr];
@@ -428,10 +440,9 @@ static NSString * const reuseIdentifier = @"Cell";
         transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
         transition.type = kCATransitionFade; // kCATransitionFade, kCATransitionPush, kCATransitionReveal, kCATransitionFade
         //transition.subtype = kCATransitionFromTop; //kCATransitionFromRight, kCATransitionFromTop, kCATransitionFromBottom
-        
+
         //custom animation for presentVC
         [self.view.window.layer addAnimation:transition forKey:nil];
-        
         [self.navigationController pushViewController:webViewController animated:YES];
     }
 }
@@ -445,6 +456,11 @@ static NSString * const reuseIdentifier = @"Cell";
         }
         [self.employees replaceObjectAtIndex:self.employees.count-1 withObject:tempEmployee];
     }
+}
+
+- (void) onTapSettingButton {
+    SettingTableVC *settingView = [[SettingTableVC alloc] init];
+    [self.navigationController pushViewController:settingView animated:YES];
 }
 
 

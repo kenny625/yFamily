@@ -10,6 +10,7 @@
 #import "AFNetworking.h"
 #import "Employee.h"
 #import "Contact.h"
+#import "AppDelegate.h"
 
 @interface BackyardClient()
 @property (assign, nonatomic) NSInteger currentEmployeesPage;
@@ -79,7 +80,8 @@ NSInteger const contactLimit = 5;
 - (void)getEmployeesWithCompletion:(void (^)(NSArray *employees, NSError *error))completion {
     NSString *currentpage = [NSString stringWithFormat:@"%ld", self.currentEmployeesPage];
     NSString *limit = [NSString stringWithFormat:@"%ld", employeeLimit];
-    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:currentpage, @"current_page", limit, @"per_page", @"US", @"locale", nil];
+    NSString *locale = ((AppDelegate *)[[UIApplication sharedApplication] delegate]).localeKey;
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:currentpage, @"current_page", limit, @"per_page", locale, @"locale", nil];
     [self getEmployeesWithParams:dic completion:^(NSArray *employees, NSError *error) {
         completion(employees, error);
     }];

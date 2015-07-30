@@ -15,13 +15,10 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.localeKey = @"";
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
     RotationVC *controller = [[RotationVC alloc] initWithNibName:@"RotationVC" bundle:nil];
-    //UITableViewController *controller = [[UITableViewController alloc] init];
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
     

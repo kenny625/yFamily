@@ -34,9 +34,14 @@
 		E3E0B4491B5C9E500049D727 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E0B4471B5C9E500049D727 /* DetailViewController.m */; };
 		E3E0B44A1B5C9E500049D727 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E0B4481B5C9E500049D727 /* DetailViewController.xib */; };
 		E3E0B44C1B5CA0630049D727 /* Img-Test1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E0B44B1B5CA0630049D727 /* Img-Test1.jpg */; };
-		E3E0B44E1B5CA09C0049D727 /* Icon-Setting.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E0B44D1B5CA09C0049D727 /* Icon-Setting.png */; };
 		E3E1EB5E1B5E190F002B2625 /* Img-Background2.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E1EB5D1B5E190F002B2625 /* Img-Background2.png */; };
 		E3E1EB601B5E19B2002B2625 /* Img-Background3.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E1EB5F1B5E19B2002B2625 /* Img-Background3.png */; };
+		E3EFFF5C1B6A197500642A6F /* SettingTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EFFF5A1B6A197500642A6F /* SettingTableVC.m */; };
+		E3EFFF5D1B6A197500642A6F /* SettingTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3EFFF5B1B6A197500642A6F /* SettingTableVC.xib */; };
+		E3EFFF691B6A207000642A6F /* Icon-Setting.png in Resources */ = {isa = PBXBuildFile; fileRef = E3EFFF681B6A207000642A6F /* Icon-Setting.png */; };
+		E3EFFF6D1B6A209A00642A6F /* SettingTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EFFF6B1B6A209A00642A6F /* SettingTableCell.m */; };
+		E3EFFF6E1B6A209A00642A6F /* SettingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3EFFF6C1B6A209A00642A6F /* SettingTableCell.xib */; };
+		E3EFFF701B6A251F00642A6F /* Img-Background11.png in Resources */ = {isa = PBXBuildFile; fileRef = E3EFFF6F1B6A251F00642A6F /* Img-Background11.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,9 +97,16 @@
 		E3E0B4471B5C9E500049D727 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		E3E0B4481B5C9E500049D727 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		E3E0B44B1B5CA0630049D727 /* Img-Test1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Img-Test1.jpg"; sourceTree = "<group>"; };
-		E3E0B44D1B5CA09C0049D727 /* Icon-Setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Setting.png"; sourceTree = "<group>"; };
 		E3E1EB5D1B5E190F002B2625 /* Img-Background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Img-Background2.png"; sourceTree = "<group>"; };
 		E3E1EB5F1B5E19B2002B2625 /* Img-Background3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Img-Background3.png"; sourceTree = "<group>"; };
+		E3EFFF591B6A197500642A6F /* SettingTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableVC.h; sourceTree = "<group>"; };
+		E3EFFF5A1B6A197500642A6F /* SettingTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableVC.m; sourceTree = "<group>"; };
+		E3EFFF5B1B6A197500642A6F /* SettingTableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTableVC.xib; sourceTree = "<group>"; };
+		E3EFFF681B6A207000642A6F /* Icon-Setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Setting.png"; sourceTree = "<group>"; };
+		E3EFFF6A1B6A209A00642A6F /* SettingTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableCell.h; sourceTree = "<group>"; };
+		E3EFFF6B1B6A209A00642A6F /* SettingTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableCell.m; sourceTree = "<group>"; };
+		E3EFFF6C1B6A209A00642A6F /* SettingTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTableCell.xib; sourceTree = "<group>"; };
+		E3EFFF6F1B6A251F00642A6F /* Img-Background11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Img-Background11.png"; sourceTree = "<group>"; };
 		F5C3FDE51E1B5B37F9D4B603 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +184,12 @@
 				E3E0B4471B5C9E500049D727 /* DetailViewController.m */,
 				E3E0B4481B5C9E500049D727 /* DetailViewController.xib */,
 				E30828EF1B5CFA2500D2FFAC /* InvisibleButtonDelegate.h */,
+				E3EFFF591B6A197500642A6F /* SettingTableVC.h */,
+				E3EFFF5A1B6A197500642A6F /* SettingTableVC.m */,
+				E3EFFF5B1B6A197500642A6F /* SettingTableVC.xib */,
+				E3EFFF6A1B6A209A00642A6F /* SettingTableCell.h */,
+				E3EFFF6B1B6A209A00642A6F /* SettingTableCell.m */,
+				E3EFFF6C1B6A209A00642A6F /* SettingTableCell.xib */,
 				548689C61B53B613008C28A8 /* Supporting Files */,
 			);
 			path = Backyard;
@@ -180,6 +198,8 @@
 		548689C61B53B613008C28A8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E3EFFF681B6A207000642A6F /* Icon-Setting.png */,
+				E3EFFF6F1B6A251F00642A6F /* Img-Background11.png */,
 				E331B1641B5E2B8D0097EC27 /* Img-Background10.png */,
 				E331B1621B5E2AB10097EC27 /* Img-Background9.png */,
 				E331B1601B5E2A780097EC27 /* Img-Background8.png */,
@@ -191,7 +211,6 @@
 				E3E1EB5D1B5E190F002B2625 /* Img-Background2.png */,
 				E30828F21B5DEA8B00D2FFAC /* Img-Background.jpg */,
 				E30828ED1B5CD41600D2FFAC /* placeHolder.png */,
-				E3E0B44D1B5CA09C0049D727 /* Icon-Setting.png */,
 				E3E0B44B1B5CA0630049D727 /* Img-Test1.jpg */,
 				548689C71B53B613008C28A8 /* Info.plist */,
 				548689C81B53B613008C28A8 /* main.m */,
@@ -307,22 +326,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3E0B44E1B5CA09C0049D727 /* Icon-Setting.png in Resources */,
 				E3E0B43F1B5C9C5D0049D727 /* RotationVC.xib in Resources */,
 				E3E0B44A1B5C9E500049D727 /* DetailViewController.xib in Resources */,
 				E3E0B43A1B5C9B0A0049D727 /* RotationCell.xib in Resources */,
 				E331B1631B5E2AB10097EC27 /* Img-Background9.png in Resources */,
 				E3E1EB601B5E19B2002B2625 /* Img-Background3.png in Resources */,
 				E3E0B44C1B5CA0630049D727 /* Img-Test1.jpg in Resources */,
+				E3EFFF691B6A207000642A6F /* Icon-Setting.png in Resources */,
 				E331B15D1B5E296D0097EC27 /* Img-Background6.png in Resources */,
 				E30828EE1B5CD41600D2FFAC /* placeHolder.png in Resources */,
 				E331B1611B5E2A780097EC27 /* Img-Background8.png in Resources */,
 				E331B15F1B5E298F0097EC27 /* Img-Background7.png in Resources */,
+				E3EFFF6E1B6A209A00642A6F /* SettingTableCell.xib in Resources */,
+				E3EFFF5D1B6A197500642A6F /* SettingTableVC.xib in Resources */,
 				E331B1591B5E1DFA0097EC27 /* Img-Background5.png in Resources */,
 				E331B1651B5E2B8D0097EC27 /* Img-Background10.png in Resources */,
 				E30828F31B5DEA8B00D2FFAC /* Img-Background.jpg in Resources */,
 				E331B1571B5E1B540097EC27 /* Img-Background4.png in Resources */,
 				548689D71B53B613008C28A8 /* LaunchScreen.xib in Resources */,
+				E3EFFF701B6A251F00642A6F /* Img-Background11.png in Resources */,
 				E3E1EB5E1B5E190F002B2625 /* Img-Background2.png in Resources */,
 				548689D41B53B613008C28A8 /* Images.xcassets in Resources */,
 			);
@@ -377,6 +399,7 @@
 			files = (
 				548689F11B53C2D8008C28A8 /* Employee.m in Sources */,
 				E3E0B43E1B5C9C5D0049D727 /* RotationVC.m in Sources */,
+				E3EFFF5C1B6A197500642A6F /* SettingTableVC.m in Sources */,
 				E3E0B4451B5C9DC70049D727 /* RotationLayout.m in Sources */,
 				E3E0B4391B5C9B0A0049D727 /* RotationCell.m in Sources */,
 				E3E0B4491B5C9E500049D727 /* DetailViewController.m in Sources */,
@@ -385,6 +408,7 @@
 				E3E0B4421B5C9D6B0049D727 /* FriendsView.m in Sources */,
 				548689F41B54DEAA008C28A8 /* Contact.m in Sources */,
 				548689EE1B53B6DB008C28A8 /* BackyardClient.m in Sources */,
+				E3EFFF6D1B6A209A00642A6F /* SettingTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
