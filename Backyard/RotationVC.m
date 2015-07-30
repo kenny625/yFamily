@@ -47,15 +47,14 @@ static NSString * const reuseIdentifier = @"Cell";
     float height = self.view.frame.size.height;
     self.friendsViewFrame = CGRectMake(0.0f, 400.0f, width, height-380.0f);
     
-    
     //initial the collecitonView
     self.rotationCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, width, 400.0f) collectionViewLayout:[[RotationLayout alloc] init]];
-
 
     //call api
     [[BackyardClient sharedInstance] getEmployeesWithCompletion:^(NSArray *employees, NSError *error) {
         //        employees
         self.employees = [[NSMutableArray alloc] initWithArray:employees];
+        [self shiftEmployeeData];
         [self.rotationCollectionView reloadData];
         /*
         [[BackyardClient sharedInstance] getContactsWithId:@"" andCompletion:^(NSArray *contacts, NSError *error) {
@@ -302,6 +301,7 @@ static NSString * const reuseIdentifier = @"Cell";
         //load next
         [[BackyardClient sharedInstance] getNextEmployeesWithCompletion:^(NSArray *employees, NSError *error) {
             self.employees = [[NSMutableArray alloc] initWithArray:employees];
+            [self shiftEmployeeData];
             [self.rotationCollectionView reloadData];
         }];
         
@@ -418,5 +418,17 @@ static NSString * const reuseIdentifier = @"Cell";
         [self.navigationController pushViewController:webViewController animated:YES];
     }
 }
+
+- (void) shiftEmployeeData {
+    
+    if (self.employees.count >0) {
+        Employee *tempEmployee = self.employees[0];
+        for (int i=0; i<self.employees.count-1; i++) {
+            [self.employees replaceObjectAtIndex:i withObject:self.employees[i+1]];
+        }
+        [self.employees replaceObjectAtIndex:self.employees.count-1 withObject:tempEmployee];
+    }
+}
+
 
 @end
