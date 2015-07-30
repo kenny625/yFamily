@@ -176,8 +176,6 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //[self.rotationCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:<#(UICollectionViewScrollPosition)#> animated:<#(BOOL)#>];
-    
     //cell size
     return CGSizeMake(120.0f, 120.0f);
 }
@@ -292,7 +290,7 @@ static NSString * const reuseIdentifier = @"Cell";
     //Move to the center
     int index = (targetX + 0.5 * ITEM_WIDTH)/ITEM_WIDTH - 1;
     index = index % 20;
-    if(index == 19) {
+    if(index == 18) {
         targetX = 0;
         //load next
         [[BackyardClient sharedInstance] getNextEmployeesWithCompletion:^(NSArray *employees, NSError *error) {
