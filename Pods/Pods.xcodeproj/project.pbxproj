@@ -7,541 +7,541 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0045000357D73B275709B87B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B078A1D747FD5A33DF3C40C7 /* CoreGraphics.framework */; };
-		0777A675B940071580FE66C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913DD983231B6CBEEDD3B21A /* Foundation.framework */; };
-		111B7C0BAA4399EB4589D58A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E05071CE226D140D1992E91C /* ImageIO.framework */; };
-		113361466B1AD7DA2752F9F7 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 76F98655F57F9A2C026C2BEA /* UIImageView+AFNetworking.h */; };
-		13EAE236516B17CA0F227622 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C1CDA2B0B2957F23945391B /* AFNetworkReachabilityManager.h */; };
-		19E4013F397647FE1D6158F7 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2188633210D88DA9DAF266E4 /* SDWebImageDownloaderOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		1BF78CFA0A2EBDD72CE3A233 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 926C3AEBCDBC5B6AE8F937AB /* SDWebImageManager.h */; };
-		1E2A2DAE736D21A4AF142141 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA56EF4A1A1243AA3BA31D4 /* UIActivityIndicatorView+AFNetworking.h */; };
-		1F63C97512B99D5F96F1D132 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = A2C6E937C594308C46C5D6CB /* UIImage+MultiFormat.h */; };
-		20FCF54F4AF5F2CCAA7BF894 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0761A70DEAEA8B87148E88AF /* UIAlertView+AFNetworking.m */; };
-		295EA3B34BE809124659900F /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DBED54FD93A352AD2A0F6A6 /* UIButton+WebCache.h */; };
-		2C6A1B5D71DAFF34C009126C /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 024DA23ADA299E1FEB28A6A9 /* UIImage+MultiFormat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2E6F4DBC2FBF7F144EB5C0EC /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BD02F53A9475F23F269ECB /* AFHTTPRequestOperationManager.m */; };
-		2F01CE30934849BB398AD062 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 848FF64BFDF599AE1B68B0D1 /* SDWebImageOperation.h */; };
-		38A520A064CCE180921BDAD9 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = BF75F624EF2583B7BA2DBFEE /* SDImageCache.h */; };
-		3C1FF821BDAB47DC46D372B7 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 95CC668BDB96058D8E89E226 /* AFHTTPRequestOperationManager.h */; };
-		3E226A66CB360383668B714E /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8871A12895424C1CEBADAD6A /* UIProgressView+AFNetworking.m */; };
-		408C40E6458FE5A330B3A82A /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 859F57669871B1FB27F19D6A /* UIWebView+AFNetworking.m */; };
-		49F4B3B08A7AA1DB42D8B13E /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = DA382633083B54593BB47E73 /* AFSecurityPolicy.h */; };
-		4A02808B8636AE7F0B664F64 /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 002CFDBE806E5B9FEDC5A171 /* UIImage+GIF.h */; };
-		4A093EA61F8CCC6FF83F7543 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F08FE5F26A821F736E8F73C1 /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4D74FE2BB030F52AF188BEB3 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7982FB72FBBFE517784D845A /* AFHTTPRequestOperation.h */; };
-		53378B27F7F58D7303E27C7E /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 400B8DFEF209A30489811CC2 /* SDWebImageDownloaderOperation.h */; };
-		55929DAB638C4F5C22DD0D11 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8887DE5733871212F86E6 /* UIActivityIndicatorView+AFNetworking.m */; };
-		578FE491FD607345B64BB54F /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B7BA01A51177B6964B3DEE /* UIImageView+HighlightedWebCache.h */; };
-		59F653ACC4641F94D1964899 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 4892E6EF7D74B0034AF97D6A /* UIButton+AFNetworking.h */; };
-		60BCB1514B33FAF179837A21 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D005CC1A688294E75B8E63E /* AFURLSessionManager.h */; };
-		66582164942AD421938B1BDF /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F767B9C276AFC3BE3669BB /* SDWebImageDownloader.h */; };
-		6A06FDEE8FB194E3F2D489E0 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2DC3385CA268B57FCB4735 /* SDWebImageCompat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6A9284219FF70B2547C78D95 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 14282B6A54AE8F7B40DC97E5 /* SDWebImagePrefetcher.h */; };
-		6E10F630C4D7C68E6D713996 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7662E08534D8461CAF804 /* SDWebImageDecoder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		72F441D7B839931FF3327F39 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 307E861EE4E6688E10A4DB89 /* UIButton+WebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		76C418C29055956AB0B4AB64 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C811AC0847DB2023CB8743C6 /* AFURLConnectionOperation.h */; };
-		76FC0D2204B1A1A5891C37B8 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3047BD987E605F9AB2C461D2 /* UIImageView+WebCache.h */; };
-		787490F3895D7312EF1B9341 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DCBF3F47AE4C4BBC847C21 /* UIImageView+AFNetworking.m */; };
-		7895FEA71C1E08D25CADE950 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 40513615423626F016B3E9DA /* UIImageView+HighlightedWebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		85920C65E2BEFAA6CB74D114 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913DD983231B6CBEEDD3B21A /* Foundation.framework */; };
-		8A92547A456023DB5E087854 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6587CC7F276DD5C6E589DE2C /* Security.framework */; };
-		8C2BB7180E718C2547CF0679 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F3FFB0CB0D9A45041FDF53 /* AFURLRequestSerialization.h */; };
-		8EB0FC2B6E36DF564FF4B9F6 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B33633BE44B06944C6A369B /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8EEF6386B76E2082ECF4D4F0 /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 756C0C1D88A46A8C4FB592AC /* SDWebImageCompat.h */; };
-		90DC36B2F29DC8F2FAF3A414 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A810BABD22C728EA5317159C /* UIRefreshControl+AFNetworking.h */; };
-		9102D2C808B1F02F1BB19D81 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DA442B60DC8D8CC25A2E81 /* UIWebView+AFNetworking.h */; };
-		91EB9C929FA5E0B41C6D8182 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BA79905CFF89939AE7AC25 /* AFHTTPRequestOperation.m */; };
-		94E99D5AA36210B56D2D2278 /* Pods-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8280B7EF6BE5681486E2F0B /* Pods-AFNetworking-dummy.m */; };
-		951752DBBD7143EF686D5C00 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B4DEAD7A074CEA7E1B1A86F /* NSData+ImageContentType.h */; };
-		96C59D6D7A327FE7DBF44503 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC07EE5F532FE9894D7AA49 /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		99B81149DB5F0A873C77C974 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E282923599BD966C5450EEF /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		99BDBEA4263CA0B628E705B0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7FA82AE597DAB8CAF2ECBE /* MobileCoreServices.framework */; };
-		9B6194D025F083D85C3F43DB /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F0756708DDF48AB93849A417 /* UIView+WebCacheOperation.h */; };
-		9D1C26BF53D4ACC724C19A09 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = BC43BF5F4D0D7BEC6D85FC37 /* AFURLResponseSerialization.h */; };
-		9EB3645663474663D2C6080F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913DD983231B6CBEEDD3B21A /* Foundation.framework */; };
-		A66140C8CDB899CD3A75E73E /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 738F788865E29A4FD81889D0 /* UIView+WebCacheOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A687410AE72348F3A9189806 /* Pods-SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E438258105CB0F62F4465F /* Pods-SDWebImage-dummy.m */; };
-		A894B4F073293A68E369C11E /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A356330E11BC2E7F046C335 /* UIRefreshControl+AFNetworking.m */; };
-		B1187D02DC90C4E191892E2C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C691EABA00B694126D40CC7 /* SystemConfiguration.framework */; };
-		B3BA86A8CEAE3995C86AC4C5 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE42339D6756AEFC2D3A060 /* AFURLConnectionOperation.m */; };
-		C5A4F5B56A0D197DC2F529A0 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD7DDEFBE8FBF947713D7FE /* AFNetworking.h */; };
-		C7FAA4522DD0B71A8CDBFAE4 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2169B5A8A3B3E33937B3B8 /* AFURLRequestSerialization.m */; };
-		CE2D32D1B24BBD89F4B9AB6F /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E975D58CD5324A3C0FB7095 /* AFNetworkReachabilityManager.m */; };
-		DA9F6E3999D88698222D9CDD /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CFE25C19F935ACF6832E49 /* AFURLSessionManager.m */; };
-		DB118574ADE3FB99F0C741E7 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F4148B6ED4FF93AF3408715C /* UIButton+AFNetworking.m */; };
-		DCDA1549CBB4659640E4810E /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 38F98388AAD34DA927980286 /* UIKit+AFNetworking.h */; };
-		DEF56FBB41C817BC3244C066 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90DE554A1C91F37073B6D2 /* SDWebImagePrefetcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E1DE451ED76087537384E3D2 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C1C5D74379BEDAE0AB445F23 /* UIAlertView+AFNetworking.h */; };
-		E89C60A92D459FDE33988F7D /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F08EC90F61CD0372C073D38E /* Pods-dummy.m */; };
-		ECE3583F55152B2D5592F81D /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C184140C3574371FB83DB0EF /* AFURLResponseSerialization.m */; };
-		EEC8F611979590F61BBDC6D1 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 417D0035888849F7A608A59E /* AFNetworkActivityIndicatorManager.h */; };
-		F0F44511C194E2CF6D5E9774 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F95FE15E68FF8764E2B753 /* AFNetworkActivityIndicatorManager.m */; };
-		F1AF08E7E716E749CF720EDC /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 29878B4F8D72E7D0D4D4E70F /* SDWebImageDecoder.h */; };
-		F3AE2BB2F898272C796B90FD /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 40A6EB30EFD297D4B4290CE8 /* UIProgressView+AFNetworking.h */; };
-		F5F5D28A6E37730B80DCC578 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1604E13FD170AA4F14639D7D /* AFHTTPSessionManager.h */; };
-		F7A2917821434A31B2329406 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 250A7DD505AB7861BDFED312 /* AFSecurityPolicy.m */; };
-		F977FE0316540BC5B443584F /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B483DDBE607B661D6FD6D69 /* UIImage+GIF.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FCA6B804F3AFCB9803B7AA42 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D51F32F7BAB473C535BF771 /* AFHTTPSessionManager.m */; };
-		FCB97AACFC736863FB1A2424 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C40F17B33FAC29CF5FD8CD /* NSData+ImageContentType.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		035ADC12E463B5F421934BA6 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 33F4AC62ACC6F6AC6A27BEA4 /* AFHTTPRequestOperation.h */; };
+		03E3956CAB3F19F99A902D20 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 971981F571442BDC074C304C /* AFSecurityPolicy.h */; };
+		046AAA4DE3F0D9884A1977F5 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0ED750BF9381D5A1E4AAD0 /* AFHTTPSessionManager.m */; };
+		05F84909FD7ABDADE2F64DE6 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B320D8E8B51E0A412B5AA68 /* AFHTTPSessionManager.h */; };
+		063A8F47DF5F0E6E62517AF4 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 575E211202D8E0EEF0723C43 /* AFURLSessionManager.m */; };
+		075CC06CE9D58C7EF64C8966 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE18A36086BAE2DB0E0137D /* UIButton+AFNetworking.m */; };
+		0DE68651DC84089878F764B8 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = DAC7FD4821EAE54B9E088D53 /* UIImageView+WebCache.h */; };
+		102482AA4BF39F655ED1B8C6 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B2B40311ECCCE92FBBA1F31 /* SDWebImageManager.h */; };
+		11292663E67E8AC0F80CB47C /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = A585275A40DB4A9C1208CD73 /* UIImage+GIF.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1AF17BF2713A672B6F4DA797 /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = FD8914F399465A967D5B5577 /* UIImage+GIF.h */; };
+		1C202DFC0863EDEE52CA3E29 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 0841E2718858E1CE06F6084A /* NSData+ImageContentType.h */; };
+		1C42BF36C1E0BCE0ED86855F /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB485732ABBDFFD4BE2E51 /* NSData+ImageContentType.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		21999F82D4F4A1FA7B1E8597 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E1B86DA26159E578FCF2DB6 /* UIWebView+AFNetworking.h */; };
+		21AF149BFFE29881CDD52741 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8048FEF97834CC93B561772 /* SDWebImageDownloaderOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		22857B1C217A95AD3D5B11A2 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = ADAC4EA0602D903B4EBB42BA /* UIButton+AFNetworking.h */; };
+		28489D79090DA4C483AD698A /* Pods-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A110526A17102C95399B6C8E /* Pods-AFNetworking-dummy.m */; };
+		2A8E3BB676B64ED4EEA605A4 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D91F932CE06DB4F2E174D1 /* UIImage+MultiFormat.h */; };
+		3C23AE7CEF6B3F9D397D77DB /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 960DFA4844814D829F5D744E /* UIAlertView+AFNetworking.m */; };
+		44960DE87241670EE563394F /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1AB438C0E97A07F67C28B3 /* AFURLResponseSerialization.m */; };
+		44A842985268942861E2EB9C /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E46771ACEB39A497CA32EEFF /* UIView+WebCacheOperation.h */; };
+		44E1BB71813EFEF063636573 /* Pods-SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CF845054699D50143E8FD8 /* Pods-SDWebImage-dummy.m */; };
+		4BB8AB7056B35FE1B1838799 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5B2A456A0C3AB69A50FC12 /* SDWebImagePrefetcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		54345360BD60E440EDF37B17 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6D5C95D69DBFFAAF83CB9E /* SDWebImageDecoder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		54C7FDE73B319597DD120295 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 49EBF7A94F666EDE29C0BE4E /* AFNetworking.h */; };
+		58F3B2BF971955B477C281E0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD25BDB5B06B74984E9C9A9E /* SystemConfiguration.framework */; };
+		5CBE13C8C0342DADF147E666 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 532E595AC0DB3CB0E9C27446 /* AFNetworkActivityIndicatorManager.h */; };
+		5DB2CD0F63758956F66F7E30 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6B16347138EA14092E10BB /* UIProgressView+AFNetworking.m */; };
+		6227EDBC5480211C65AC0CA7 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D984C4716A3380D962078 /* UIWebView+AFNetworking.m */; };
+		62F06A7CB754D0415617E4D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA0FAB7F4DC6137151026A0 /* Foundation.framework */; };
+		68B8618B41B53AE882ACB964 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 797C8485FA05DD37B5AB627A /* SDWebImagePrefetcher.h */; };
+		6AD4AC0F43F12C9840123178 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FE1CBFB4337F1DA0BA0B03 /* MobileCoreServices.framework */; };
+		6BFDF73A88545A3C1E61A0B1 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D28361B4F3A43909732712 /* AFNetworkReachabilityManager.h */; };
+		733CA671BC0EF9080A13265A /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7F94A981009997FD60D534 /* UIImageView+HighlightedWebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		768B574634B5E0CA1CC30C37 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AEEDD15A1763AC842B0684 /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		77C0E9A247AD1BBD4C263DE9 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5C9F33C9862A6BE73E02C1 /* AFHTTPRequestOperation.m */; };
+		7856573A62FA41CE16BFDB7E /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B19F3F252FD45D02D749A509 /* UIProgressView+AFNetworking.h */; };
+		7BB38DEAB4D452D81DD3F079 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2259585713AAD0E135715ED9 /* UIImage+MultiFormat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7D5A6455861DFDB89479B5C8 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD08CD57BAA8C786EBE3E6E /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7F4AC40C4990A439A4005C9E /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D036E227D57EAE5EB950334 /* UIImageView+HighlightedWebCache.h */; };
+		805F8EC8301EBA2ACA55BCDF /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 895EEDB81C788D05A07C0924 /* AFURLConnectionOperation.m */; };
+		8066E14EB9B8D2411F3B4124 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C06C59642D76D4608AEE2E /* AFSecurityPolicy.m */; };
+		8068F627EDE0CEEBDF3A57B1 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FDC63CC82E0CFAB3D21FAEF /* UIButton+WebCache.h */; };
+		828825FFDDF4B568B7463992 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6695B6367CAD8DA7C56C6DB7 /* AFURLSessionManager.h */; };
+		83AA0D5F4DD3E628483E45E7 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 344A0BF70BA8E6FA508EF2F3 /* UIRefreshControl+AFNetworking.m */; };
+		8ACBE6F55DA37AC03641A4C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BEDAA80C67A64A7D2B041E /* CoreGraphics.framework */; };
+		8B8BA096FDE65EBCF73B8A88 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 653CA6759BEAE6E039DC7629 /* AFURLRequestSerialization.m */; };
+		8DE7529CC886B399709E3FB7 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 55A04C21847F8BA6FA39FDF5 /* SDWebImageDownloader.h */; };
+		8E456C17E64C734CB4CEEF97 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C26A61D416FD2044AED413B3 /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8F1248EF61C0489849CC32B0 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D2BDA3E1178D20F3E7ECE3B3 /* SDWebImageOperation.h */; };
+		8F8726105D7641D1FE59D015 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA391B05AD7D2C8ED79E250 /* AFHTTPRequestOperationManager.m */; };
+		91BFB996F0490F16A8065C66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA0FAB7F4DC6137151026A0 /* Foundation.framework */; };
+		93A983E73368A4186A42C940 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 897666B5D766945BA07183CA /* AFURLRequestSerialization.h */; };
+		93FAD28DA3762C745307E8DB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBDD1A7352E9FCFD6D4C746 /* Security.framework */; };
+		988460B6B4AC4B9E9BE9A524 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B9B60E18BA0A9FA4A1D67F /* AFNetworkReachabilityManager.m */; };
+		99BD6376AEE9F799C7A714A1 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA5A97F35E7858F227DCFD0 /* AFHTTPRequestOperationManager.h */; };
+		9E073D670E397569FC6FA063 /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F540764F838B08B95941FD /* SDWebImageCompat.h */; };
+		9F451B254F5600D55DD065FD /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0303F2DEBCB60E38A48E3D /* UIButton+WebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A1D09ED873B74D0EA18DC210 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB988FE79ECC7A14F50A58C /* UIImageView+AFNetworking.m */; };
+		AB0350434D58FFCE0E450F3B /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF6D0B93BCDB4BDD748D34E /* SDImageCache.h */; };
+		AC5D1BCF3FEC0AFF75D6C25B /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B59791D1392F4E08C714B64 /* UIAlertView+AFNetworking.h */; };
+		B496CB0AEECFC6546F4EC06C /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F4091CEE463E16A83E7796A /* AFURLResponseSerialization.h */; };
+		B99B6CD106A1469235642385 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FE810E14CDDA4B8840A5E06F /* UIImageView+AFNetworking.h */; };
+		BCD8819C1B906B2B1343E2E9 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8575D265F7A4EF3FAB0AF577 /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BD42E1FD007DA029945BDB5B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CD1C71252FC699C1F25A67 /* ImageIO.framework */; };
+		C22DEFBD77AEE9ED97122C9D /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B02A15B27A3C24C0A10FE3F /* SDWebImageCompat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D62DBE66639DFA7A58307557 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DDDA47412410E199D6F35EA3 /* AFURLConnectionOperation.h */; };
+		DEB97C5838E696EC4DDD38F4 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E98AB9C1BC16E2DD5CB8CF96 /* Pods-dummy.m */; };
+		E1AA53D08F335D733D240EF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA0FAB7F4DC6137151026A0 /* Foundation.framework */; };
+		E8780BD7ED8123DBA8A7FFCA /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E767E6DD47AD81EF1A7EDE4 /* SDWebImageDecoder.h */; };
+		EBB06341C1E764B774E2A800 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F2DA35ACE76F0B4B774E5EFA /* UIRefreshControl+AFNetworking.h */; };
+		EF18192257377369EB8C6864 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7545895C50EF073551188E /* UIActivityIndicatorView+AFNetworking.m */; };
+		F29E7EBAD27112F53A8CDE78 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D254FB889044D413B94A2A7 /* UIActivityIndicatorView+AFNetworking.h */; };
+		F4763C8D5ED76880E7032F70 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D904B89919D435CA285D65C /* SDWebImageDownloaderOperation.h */; };
+		F64E13425614775B37867437 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6E4A99999358061F1030AE /* UIView+WebCacheOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F9BBF72FF7B6D0A4C6B804E1 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF6F4D20F41AAEC72061B6 /* AFNetworkActivityIndicatorManager.m */; };
+		FF917057D7F5D211C14D4129 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 010262748769A67D017D60FA /* UIKit+AFNetworking.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0E8A2E4E672A9255DC480301 /* PBXContainerItemProxy */ = {
+		05BDBAF6E4A551FD9093E85D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 14CE07894AACA40D7D9F26F6 /* Project object */;
+			containerPortal = AA0F7C4D7D1F3727BE1DFD73 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 32D53140E76CFE7B33D0F148;
+			remoteGlobalIDString = 8CB92E69BEDDCAEF36ECFCF8;
 			remoteInfo = "Pods-SDWebImage";
 		};
-		B37C48588A28FB950C9B85AC /* PBXContainerItemProxy */ = {
+		14D6A8CD7C38198996FD59A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 14CE07894AACA40D7D9F26F6 /* Project object */;
+			containerPortal = AA0F7C4D7D1F3727BE1DFD73 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 54DCE81C3851993ADA497C1E;
+			remoteGlobalIDString = CFBDFEFBFCCBED84A8304255;
 			remoteInfo = "Pods-AFNetworking";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		002CFDBE806E5B9FEDC5A171 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
-		003193B113907B1E5D454C02 /* Pods-SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDWebImage.xcconfig"; sourceTree = "<group>"; };
-		024DA23ADA299E1FEB28A6A9 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
-		0761A70DEAEA8B87148E88AF /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
-		14282B6A54AE8F7B40DC97E5 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
-		1604E13FD170AA4F14639D7D /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		1C2169B5A8A3B3E33937B3B8 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		2188633210D88DA9DAF266E4 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
-		234E72A3AE7CE54A95889B1A /* libPods-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		250A7DD505AB7861BDFED312 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
-		29878B4F8D72E7D0D4D4E70F /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
-		2AD7DDEFBE8FBF947713D7FE /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		2E975D58CD5324A3C0FB7095 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		2ED8887DE5733871212F86E6 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
-		2FE42339D6756AEFC2D3A060 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		3047BD987E605F9AB2C461D2 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
-		307E861EE4E6688E10A4DB89 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
-		37E438258105CB0F62F4465F /* Pods-SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDWebImage-dummy.m"; sourceTree = "<group>"; };
-		38F98388AAD34DA927980286 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
-		3A356330E11BC2E7F046C335 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
-		3E282923599BD966C5450EEF /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
-		400B8DFEF209A30489811CC2 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
-		40513615423626F016B3E9DA /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
-		40A6EB30EFD297D4B4290CE8 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		417D0035888849F7A608A59E /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
-		43C40F17B33FAC29CF5FD8CD /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
-		4892E6EF7D74B0034AF97D6A /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
-		4A90DE554A1C91F37073B6D2 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
-		4B4DEAD7A074CEA7E1B1A86F /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
-		4C282051D6B9F36A249BE2F3 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		4F94A79E4BE859F206D532B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FC07EE5F532FE9894D7AA49 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
-		5B483DDBE607B661D6FD6D69 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
-		5C7CC82AB891E7F946742DF9 /* Pods-SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDWebImage-prefix.pch"; sourceTree = "<group>"; };
-		5DBED54FD93A352AD2A0F6A6 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
-		6176860A2EA5AD77E0A816C4 /* libPods-SDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SDWebImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		65281B6A542C8270A2AB7AAC /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6587CC7F276DD5C6E589DE2C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		6D51F32F7BAB473C535BF771 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		715725B88735FF79FC9A4774 /* Pods-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFNetworking.xcconfig"; sourceTree = "<group>"; };
-		71F95FE15E68FF8764E2B753 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
-		738F788865E29A4FD81889D0 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		74207CEFE676BF088053BB9F /* Pods-SDWebImage-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDWebImage-Private.xcconfig"; sourceTree = "<group>"; };
-		756C0C1D88A46A8C4FB592AC /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
-		75BD48023FFC1622B489AC3F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		76F98655F57F9A2C026C2BEA /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		7982FB72FBBFE517784D845A /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		79DCBF3F47AE4C4BBC847C21 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		7B36BE7E94C29B96C2AC6087 /* Pods-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
-		7D7FA82AE597DAB8CAF2ECBE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		848FF64BFDF599AE1B68B0D1 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
-		859F57669871B1FB27F19D6A /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		8871A12895424C1CEBADAD6A /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
-		8B33633BE44B06944C6A369B /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
-		8C1CDA2B0B2957F23945391B /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		8C691EABA00B694126D40CC7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		8D005CC1A688294E75B8E63E /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
-		8DE7662E08534D8461CAF804 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
-		8F257607D14CD70B73D19060 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		913DD983231B6CBEEDD3B21A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		914C21A14C7A83EDE3152F95 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		926C3AEBCDBC5B6AE8F937AB /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
-		95CC668BDB96058D8E89E226 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
-		9EA56EF4A1A1243AA3BA31D4 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
-		A2C6E937C594308C46C5D6CB /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
-		A810BABD22C728EA5317159C /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		B078A1D747FD5A33DF3C40C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		B0BA79905CFF89939AE7AC25 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		B7CFE25C19F935ACF6832E49 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
-		BC43BF5F4D0D7BEC6D85FC37 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		BF75F624EF2583B7BA2DBFEE /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
-		C184140C3574371FB83DB0EF /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		C1C5D74379BEDAE0AB445F23 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
-		C6B7BA01A51177B6964B3DEE /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
-		C7F767B9C276AFC3BE3669BB /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
-		C811AC0847DB2023CB8743C6 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		CA473EBFFA763C9F97F3B622 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		D21F1F685D6B0F7EC2FCADE5 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		D3C81DBE3538B9DE01B6E4B4 /* Pods-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
-		DA382633083B54593BB47E73 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
-		E05071CE226D140D1992E91C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		E1F3FFB0CB0D9A45041FDF53 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		E8280B7EF6BE5681486E2F0B /* Pods-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AFNetworking-dummy.m"; sourceTree = "<group>"; };
-		EA2DC3385CA268B57FCB4735 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
-		F0756708DDF48AB93849A417 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
-		F08EC90F61CD0372C073D38E /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		F08FE5F26A821F736E8F73C1 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
-		F4148B6ED4FF93AF3408715C /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
-		F5DA442B60DC8D8CC25A2E81 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
-		F8BD02F53A9475F23F269ECB /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		010262748769A67D017D60FA /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		04459D29B434A0089222109D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		0841E2718858E1CE06F6084A /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		0A4D6F8D6035AF0FBA9DF7D6 /* Pods-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		0C0D984C4716A3380D962078 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		0E1B86DA26159E578FCF2DB6 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		0EDB485732ABBDFFD4BE2E51 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		117871794E7147FE0C1635FE /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		16ABD8576219D6B029BBBB31 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AACF0192D9DBB1B34C2F985 /* libPods-SDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SDWebImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E767E6DD47AD81EF1A7EDE4 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
+		1EBF6F4D20F41AAEC72061B6 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		2259585713AAD0E135715ED9 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		25482C002A61F8C35D293874 /* Pods-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		2A4B4DCE86768041FCE18AB4 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		2D254FB889044D413B94A2A7 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		33F4AC62ACC6F6AC6A27BEA4 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		344A0BF70BA8E6FA508EF2F3 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		3B320D8E8B51E0A412B5AA68 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		3B59791D1392F4E08C714B64 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		3C5C9F33C9862A6BE73E02C1 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		3FDC63CC82E0CFAB3D21FAEF /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		49EBF7A94F666EDE29C0BE4E /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		4AE18A36086BAE2DB0E0137D /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		4B02A15B27A3C24C0A10FE3F /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
+		4D904B89919D435CA285D65C /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		4DF6D0B93BCDB4BDD748D34E /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
+		532E595AC0DB3CB0E9C27446 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		53FE1CBFB4337F1DA0BA0B03 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		55A04C21847F8BA6FA39FDF5 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
+		575E211202D8E0EEF0723C43 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		5BB988FE79ECC7A14F50A58C /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		5D7545895C50EF073551188E /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		639E0AD6165B38BC04302209 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		653CA6759BEAE6E039DC7629 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		6695B6367CAD8DA7C56C6DB7 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		6DA38D57D920AD54A67C1547 /* Pods-SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDWebImage.xcconfig"; sourceTree = "<group>"; };
+		70F540764F838B08B95941FD /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
+		73AEEDD15A1763AC842B0684 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		757E515CCAB3F046CE91BBE4 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		797C8485FA05DD37B5AB627A /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		7CD08CD57BAA8C786EBE3E6E /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
+		7D036E227D57EAE5EB950334 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		7E7F94A981009997FD60D534 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		82C2859E64C90CBC81A572C8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		83B9B60E18BA0A9FA4A1D67F /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		84BEDAA80C67A64A7D2B041E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		8575D265F7A4EF3FAB0AF577 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
+		895EEDB81C788D05A07C0924 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		897666B5D766945BA07183CA /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		8B6E4A99999358061F1030AE /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		8C5B2A456A0C3AB69A50FC12 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		960DFA4844814D829F5D744E /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		96D28361B4F3A43909732712 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		971981F571442BDC074C304C /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		9B2B40311ECCCE92FBBA1F31 /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
+		9E8D3643B99F91EF90EC3B96 /* Pods-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFNetworking.xcconfig"; sourceTree = "<group>"; };
+		9F4091CEE463E16A83E7796A /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		A0D91F932CE06DB4F2E174D1 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		A110526A17102C95399B6C8E /* Pods-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		A585275A40DB4A9C1208CD73 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
+		AA5028E8EE948452ACD8C0F3 /* Pods-SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDWebImage-prefix.pch"; sourceTree = "<group>"; };
+		AB6B16347138EA14092E10BB /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		AC0303F2DEBCB60E38A48E3D /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
+		ACA0FAB7F4DC6137151026A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ADAC4EA0602D903B4EBB42BA /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		AF1AB438C0E97A07F67C28B3 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		B19F3F252FD45D02D749A509 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		B2CF845054699D50143E8FD8 /* Pods-SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDWebImage-dummy.m"; sourceTree = "<group>"; };
+		C26A61D416FD2044AED413B3 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
+		C2CD1C71252FC699C1F25A67 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		C8C06C59642D76D4608AEE2E /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		CBA391B05AD7D2C8ED79E250 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		CEA5A97F35E7858F227DCFD0 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		D2BDA3E1178D20F3E7ECE3B3 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
+		D8B3E3DEF2EA6EB3C9E88E71 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC7FD4821EAE54B9E088D53 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		DBBDD1A7352E9FCFD6D4C746 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		DDDA47412410E199D6F35EA3 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		DF1A45EAA28B99E2F9825FEF /* Pods-SDWebImage-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDWebImage-Private.xcconfig"; sourceTree = "<group>"; };
+		E46771ACEB39A497CA32EEFF /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		E7403F2080426637BF79563F /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		E8048FEF97834CC93B561772 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		E98AB9C1BC16E2DD5CB8CF96 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		EC0ED750BF9381D5A1E4AAD0 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		F2DA35ACE76F0B4B774E5EFA /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		FA6D5C95D69DBFFAAF83CB9E /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
+		FD25BDB5B06B74984E9C9A9E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		FD8914F399465A967D5B5577 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
+		FE810E14CDDA4B8840A5E06F /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BE0746DA2EFA832E3B7B822F /* Frameworks */ = {
+		0E6E63A52448BA67C3C06F3B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0777A675B940071580FE66C4 /* Foundation.framework in Frameworks */,
-				111B7C0BAA4399EB4589D58A /* ImageIO.framework in Frameworks */,
+				62F06A7CB754D0415617E4D4 /* Foundation.framework in Frameworks */,
+				BD42E1FD007DA029945BDB5B /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E222E8A5E4A42C92368EE082 /* Frameworks */ = {
+		4340BD915FEB5CFBC122F8CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EB3645663474663D2C6080F /* Foundation.framework in Frameworks */,
+				8ACBE6F55DA37AC03641A4C9 /* CoreGraphics.framework in Frameworks */,
+				E1AA53D08F335D733D240EF6 /* Foundation.framework in Frameworks */,
+				6AD4AC0F43F12C9840123178 /* MobileCoreServices.framework in Frameworks */,
+				93FAD28DA3762C745307E8DB /* Security.framework in Frameworks */,
+				58F3B2BF971955B477C281E0 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8175E5650AAF096462BB4CB /* Frameworks */ = {
+		C24606EEBBCDCA60CFA86D99 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0045000357D73B275709B87B /* CoreGraphics.framework in Frameworks */,
-				85920C65E2BEFAA6CB74D114 /* Foundation.framework in Frameworks */,
-				99BDBEA4263CA0B628E705B0 /* MobileCoreServices.framework in Frameworks */,
-				8A92547A456023DB5E087854 /* Security.framework in Frameworks */,
-				B1187D02DC90C4E191892E2C /* SystemConfiguration.framework in Frameworks */,
+				91BFB996F0490F16A8065C66 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CD0C46751AD1673E97928E6 /* iOS */ = {
+		0D6C9A686682913AF118E548 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B078A1D747FD5A33DF3C40C7 /* CoreGraphics.framework */,
-				913DD983231B6CBEEDD3B21A /* Foundation.framework */,
-				E05071CE226D140D1992E91C /* ImageIO.framework */,
-				7D7FA82AE597DAB8CAF2ECBE /* MobileCoreServices.framework */,
-				6587CC7F276DD5C6E589DE2C /* Security.framework */,
-				8C691EABA00B694126D40CC7 /* SystemConfiguration.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		220E2DDE749A4033FF11269D /* Security */ = {
-			isa = PBXGroup;
-			children = (
-				DA382633083B54593BB47E73 /* AFSecurityPolicy.h */,
-				250A7DD505AB7861BDFED312 /* AFSecurityPolicy.m */,
-			);
-			name = Security;
-			sourceTree = "<group>";
-		};
-		3ADC4CAEA86949D5B8E905C2 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				4B4DEAD7A074CEA7E1B1A86F /* NSData+ImageContentType.h */,
-				43C40F17B33FAC29CF5FD8CD /* NSData+ImageContentType.m */,
-				BF75F624EF2583B7BA2DBFEE /* SDImageCache.h */,
-				F08FE5F26A821F736E8F73C1 /* SDImageCache.m */,
-				756C0C1D88A46A8C4FB592AC /* SDWebImageCompat.h */,
-				EA2DC3385CA268B57FCB4735 /* SDWebImageCompat.m */,
-				29878B4F8D72E7D0D4D4E70F /* SDWebImageDecoder.h */,
-				8DE7662E08534D8461CAF804 /* SDWebImageDecoder.m */,
-				C7F767B9C276AFC3BE3669BB /* SDWebImageDownloader.h */,
-				4FC07EE5F532FE9894D7AA49 /* SDWebImageDownloader.m */,
-				400B8DFEF209A30489811CC2 /* SDWebImageDownloaderOperation.h */,
-				2188633210D88DA9DAF266E4 /* SDWebImageDownloaderOperation.m */,
-				926C3AEBCDBC5B6AE8F937AB /* SDWebImageManager.h */,
-				3E282923599BD966C5450EEF /* SDWebImageManager.m */,
-				848FF64BFDF599AE1B68B0D1 /* SDWebImageOperation.h */,
-				14282B6A54AE8F7B40DC97E5 /* SDWebImagePrefetcher.h */,
-				4A90DE554A1C91F37073B6D2 /* SDWebImagePrefetcher.m */,
-				5DBED54FD93A352AD2A0F6A6 /* UIButton+WebCache.h */,
-				307E861EE4E6688E10A4DB89 /* UIButton+WebCache.m */,
-				002CFDBE806E5B9FEDC5A171 /* UIImage+GIF.h */,
-				5B483DDBE607B661D6FD6D69 /* UIImage+GIF.m */,
-				A2C6E937C594308C46C5D6CB /* UIImage+MultiFormat.h */,
-				024DA23ADA299E1FEB28A6A9 /* UIImage+MultiFormat.m */,
-				C6B7BA01A51177B6964B3DEE /* UIImageView+HighlightedWebCache.h */,
-				40513615423626F016B3E9DA /* UIImageView+HighlightedWebCache.m */,
-				3047BD987E605F9AB2C461D2 /* UIImageView+WebCache.h */,
-				8B33633BE44B06944C6A369B /* UIImageView+WebCache.m */,
-				F0756708DDF48AB93849A417 /* UIView+WebCacheOperation.h */,
-				738F788865E29A4FD81889D0 /* UIView+WebCacheOperation.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		3DCC5D308C85143F4734E696 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				65281B6A542C8270A2AB7AAC /* Pods-acknowledgements.markdown */,
-				4C282051D6B9F36A249BE2F3 /* Pods-acknowledgements.plist */,
-				F08EC90F61CD0372C073D38E /* Pods-dummy.m */,
-				914C21A14C7A83EDE3152F95 /* Pods-environment.h */,
-				D21F1F685D6B0F7EC2FCADE5 /* Pods-resources.sh */,
-				CA473EBFFA763C9F97F3B622 /* Pods.debug.xcconfig */,
-				8F257607D14CD70B73D19060 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		415C8CBE2783E4532F4F7D76 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4F94A79E4BE859F206D532B6 /* libPods.a */,
-				234E72A3AE7CE54A95889B1A /* libPods-AFNetworking.a */,
-				6176860A2EA5AD77E0A816C4 /* libPods-SDWebImage.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6A99D7434A48518EDE72E7E7 /* NSURLSession */ = {
-			isa = PBXGroup;
-			children = (
-				1604E13FD170AA4F14639D7D /* AFHTTPSessionManager.h */,
-				6D51F32F7BAB473C535BF771 /* AFHTTPSessionManager.m */,
-				8D005CC1A688294E75B8E63E /* AFURLSessionManager.h */,
-				B7CFE25C19F935ACF6832E49 /* AFURLSessionManager.m */,
-			);
-			name = NSURLSession;
-			sourceTree = "<group>";
-		};
-		7BB1649BAB470FB7AC85F789 /* SDWebImage */ = {
-			isa = PBXGroup;
-			children = (
-				3ADC4CAEA86949D5B8E905C2 /* Core */,
-				E566ED4C3DD788F3A40E800E /* Support Files */,
-			);
-			path = SDWebImage;
-			sourceTree = "<group>";
-		};
-		874DB4B3AAD5059BA5DD8A7F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				715725B88735FF79FC9A4774 /* Pods-AFNetworking.xcconfig */,
-				7B36BE7E94C29B96C2AC6087 /* Pods-AFNetworking-Private.xcconfig */,
-				E8280B7EF6BE5681486E2F0B /* Pods-AFNetworking-dummy.m */,
-				D3C81DBE3538B9DE01B6E4B4 /* Pods-AFNetworking-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-AFNetworking";
-			sourceTree = "<group>";
-		};
-		8DA6380E212A89934655B1FB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D974EBAD566B7DDF1B381F75 /* AFNetworking */,
-				7BB1649BAB470FB7AC85F789 /* SDWebImage */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A6EC08D6138D1695B4F5A669 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				417D0035888849F7A608A59E /* AFNetworkActivityIndicatorManager.h */,
-				71F95FE15E68FF8764E2B753 /* AFNetworkActivityIndicatorManager.m */,
-				9EA56EF4A1A1243AA3BA31D4 /* UIActivityIndicatorView+AFNetworking.h */,
-				2ED8887DE5733871212F86E6 /* UIActivityIndicatorView+AFNetworking.m */,
-				C1C5D74379BEDAE0AB445F23 /* UIAlertView+AFNetworking.h */,
-				0761A70DEAEA8B87148E88AF /* UIAlertView+AFNetworking.m */,
-				4892E6EF7D74B0034AF97D6A /* UIButton+AFNetworking.h */,
-				F4148B6ED4FF93AF3408715C /* UIButton+AFNetworking.m */,
-				76F98655F57F9A2C026C2BEA /* UIImageView+AFNetworking.h */,
-				79DCBF3F47AE4C4BBC847C21 /* UIImageView+AFNetworking.m */,
-				38F98388AAD34DA927980286 /* UIKit+AFNetworking.h */,
-				40A6EB30EFD297D4B4290CE8 /* UIProgressView+AFNetworking.h */,
-				8871A12895424C1CEBADAD6A /* UIProgressView+AFNetworking.m */,
-				A810BABD22C728EA5317159C /* UIRefreshControl+AFNetworking.h */,
-				3A356330E11BC2E7F046C335 /* UIRefreshControl+AFNetworking.m */,
-				F5DA442B60DC8D8CC25A2E81 /* UIWebView+AFNetworking.h */,
-				859F57669871B1FB27F19D6A /* UIWebView+AFNetworking.m */,
-			);
-			name = UIKit;
-			sourceTree = "<group>";
-		};
-		C96BADC8AD8BE7D068F3DB7E /* Serialization */ = {
-			isa = PBXGroup;
-			children = (
-				E1F3FFB0CB0D9A45041FDF53 /* AFURLRequestSerialization.h */,
-				1C2169B5A8A3B3E33937B3B8 /* AFURLRequestSerialization.m */,
-				BC43BF5F4D0D7BEC6D85FC37 /* AFURLResponseSerialization.h */,
-				C184140C3574371FB83DB0EF /* AFURLResponseSerialization.m */,
-			);
-			name = Serialization;
-			sourceTree = "<group>";
-		};
-		D5C076F531F17AAC18DA0912 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0CD0C46751AD1673E97928E6 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D974EBAD566B7DDF1B381F75 /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				2AD7DDEFBE8FBF947713D7FE /* AFNetworking.h */,
-				FE2BFC0A2FB93994ED94C4B5 /* NSURLConnection */,
-				6A99D7434A48518EDE72E7E7 /* NSURLSession */,
-				F3B12704BFA21BDBF61CDC37 /* Reachability */,
-				220E2DDE749A4033FF11269D /* Security */,
-				C96BADC8AD8BE7D068F3DB7E /* Serialization */,
-				874DB4B3AAD5059BA5DD8A7F /* Support Files */,
-				A6EC08D6138D1695B4F5A669 /* UIKit */,
-			);
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		DC59E48DE773033FE9700B53 = {
-			isa = PBXGroup;
-			children = (
-				75BD48023FFC1622B489AC3F /* Podfile */,
-				D5C076F531F17AAC18DA0912 /* Frameworks */,
-				8DA6380E212A89934655B1FB /* Pods */,
-				415C8CBE2783E4532F4F7D76 /* Products */,
-				F4F71FE1D66160E916D36435 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		E566ED4C3DD788F3A40E800E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				003193B113907B1E5D454C02 /* Pods-SDWebImage.xcconfig */,
-				74207CEFE676BF088053BB9F /* Pods-SDWebImage-Private.xcconfig */,
-				37E438258105CB0F62F4465F /* Pods-SDWebImage-dummy.m */,
-				5C7CC82AB891E7F946742DF9 /* Pods-SDWebImage-prefix.pch */,
+				6DA38D57D920AD54A67C1547 /* Pods-SDWebImage.xcconfig */,
+				DF1A45EAA28B99E2F9825FEF /* Pods-SDWebImage-Private.xcconfig */,
+				B2CF845054699D50143E8FD8 /* Pods-SDWebImage-dummy.m */,
+				AA5028E8EE948452ACD8C0F3 /* Pods-SDWebImage-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-SDWebImage";
 			sourceTree = "<group>";
 		};
-		F3B12704BFA21BDBF61CDC37 /* Reachability */ = {
+		2D6723BFC06CAB30FF15FCDE /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				8C1CDA2B0B2957F23945391B /* AFNetworkReachabilityManager.h */,
-				2E975D58CD5324A3C0FB7095 /* AFNetworkReachabilityManager.m */,
+				49EBF7A94F666EDE29C0BE4E /* AFNetworking.h */,
+				C1DB233D8989C7ADC15E2BD6 /* NSURLConnection */,
+				C444C1327ED5EE1D927CADD6 /* NSURLSession */,
+				BA37122DDB6A6F12964805F5 /* Reachability */,
+				3705380F010397232C1A5C58 /* Security */,
+				7D600D6386C835F1B7080550 /* Serialization */,
+				583BA8E45A34675449A8B4CE /* Support Files */,
+				AF007AAD1E0973E8E25F5F33 /* UIKit */,
 			);
-			name = Reachability;
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
-		F4F71FE1D66160E916D36435 /* Targets Support Files */ = {
+		3705380F010397232C1A5C58 /* Security */ = {
 			isa = PBXGroup;
 			children = (
-				3DCC5D308C85143F4734E696 /* Pods */,
+				971981F571442BDC074C304C /* AFSecurityPolicy.h */,
+				C8C06C59642D76D4608AEE2E /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		583BA8E45A34675449A8B4CE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E8D3643B99F91EF90EC3B96 /* Pods-AFNetworking.xcconfig */,
+				0A4D6F8D6035AF0FBA9DF7D6 /* Pods-AFNetworking-Private.xcconfig */,
+				A110526A17102C95399B6C8E /* Pods-AFNetworking-dummy.m */,
+				25482C002A61F8C35D293874 /* Pods-AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-AFNetworking";
+			sourceTree = "<group>";
+		};
+		7A6C4ADE6DAE3E9BE6F73B2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				757E515CCAB3F046CE91BBE4 /* Pods-acknowledgements.markdown */,
+				E7403F2080426637BF79563F /* Pods-acknowledgements.plist */,
+				E98AB9C1BC16E2DD5CB8CF96 /* Pods-dummy.m */,
+				639E0AD6165B38BC04302209 /* Pods-environment.h */,
+				2A4B4DCE86768041FCE18AB4 /* Pods-resources.sh */,
+				04459D29B434A0089222109D /* Pods.debug.xcconfig */,
+				82C2859E64C90CBC81A572C8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		7D39F72A1400465626F93A21 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				84BEDAA80C67A64A7D2B041E /* CoreGraphics.framework */,
+				ACA0FAB7F4DC6137151026A0 /* Foundation.framework */,
+				C2CD1C71252FC699C1F25A67 /* ImageIO.framework */,
+				53FE1CBFB4337F1DA0BA0B03 /* MobileCoreServices.framework */,
+				DBBDD1A7352E9FCFD6D4C746 /* Security.framework */,
+				FD25BDB5B06B74984E9C9A9E /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7D600D6386C835F1B7080550 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				897666B5D766945BA07183CA /* AFURLRequestSerialization.h */,
+				653CA6759BEAE6E039DC7629 /* AFURLRequestSerialization.m */,
+				9F4091CEE463E16A83E7796A /* AFURLResponseSerialization.h */,
+				AF1AB438C0E97A07F67C28B3 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		8895AA3F18466FD015FB3470 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A6C4ADE6DAE3E9BE6F73B2C /* Pods */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		FE2BFC0A2FB93994ED94C4B5 /* NSURLConnection */ = {
+		90AB99E2C9521FFCA4998D39 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				7982FB72FBBFE517784D845A /* AFHTTPRequestOperation.h */,
-				B0BA79905CFF89939AE7AC25 /* AFHTTPRequestOperation.m */,
-				95CC668BDB96058D8E89E226 /* AFHTTPRequestOperationManager.h */,
-				F8BD02F53A9475F23F269ECB /* AFHTTPRequestOperationManager.m */,
-				C811AC0847DB2023CB8743C6 /* AFURLConnectionOperation.h */,
-				2FE42339D6756AEFC2D3A060 /* AFURLConnectionOperation.m */,
+				0841E2718858E1CE06F6084A /* NSData+ImageContentType.h */,
+				0EDB485732ABBDFFD4BE2E51 /* NSData+ImageContentType.m */,
+				4DF6D0B93BCDB4BDD748D34E /* SDImageCache.h */,
+				8575D265F7A4EF3FAB0AF577 /* SDImageCache.m */,
+				70F540764F838B08B95941FD /* SDWebImageCompat.h */,
+				4B02A15B27A3C24C0A10FE3F /* SDWebImageCompat.m */,
+				1E767E6DD47AD81EF1A7EDE4 /* SDWebImageDecoder.h */,
+				FA6D5C95D69DBFFAAF83CB9E /* SDWebImageDecoder.m */,
+				55A04C21847F8BA6FA39FDF5 /* SDWebImageDownloader.h */,
+				7CD08CD57BAA8C786EBE3E6E /* SDWebImageDownloader.m */,
+				4D904B89919D435CA285D65C /* SDWebImageDownloaderOperation.h */,
+				E8048FEF97834CC93B561772 /* SDWebImageDownloaderOperation.m */,
+				9B2B40311ECCCE92FBBA1F31 /* SDWebImageManager.h */,
+				C26A61D416FD2044AED413B3 /* SDWebImageManager.m */,
+				D2BDA3E1178D20F3E7ECE3B3 /* SDWebImageOperation.h */,
+				797C8485FA05DD37B5AB627A /* SDWebImagePrefetcher.h */,
+				8C5B2A456A0C3AB69A50FC12 /* SDWebImagePrefetcher.m */,
+				3FDC63CC82E0CFAB3D21FAEF /* UIButton+WebCache.h */,
+				AC0303F2DEBCB60E38A48E3D /* UIButton+WebCache.m */,
+				FD8914F399465A967D5B5577 /* UIImage+GIF.h */,
+				A585275A40DB4A9C1208CD73 /* UIImage+GIF.m */,
+				A0D91F932CE06DB4F2E174D1 /* UIImage+MultiFormat.h */,
+				2259585713AAD0E135715ED9 /* UIImage+MultiFormat.m */,
+				7D036E227D57EAE5EB950334 /* UIImageView+HighlightedWebCache.h */,
+				7E7F94A981009997FD60D534 /* UIImageView+HighlightedWebCache.m */,
+				DAC7FD4821EAE54B9E088D53 /* UIImageView+WebCache.h */,
+				73AEEDD15A1763AC842B0684 /* UIImageView+WebCache.m */,
+				E46771ACEB39A497CA32EEFF /* UIView+WebCacheOperation.h */,
+				8B6E4A99999358061F1030AE /* UIView+WebCacheOperation.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		AF007AAD1E0973E8E25F5F33 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				532E595AC0DB3CB0E9C27446 /* AFNetworkActivityIndicatorManager.h */,
+				1EBF6F4D20F41AAEC72061B6 /* AFNetworkActivityIndicatorManager.m */,
+				2D254FB889044D413B94A2A7 /* UIActivityIndicatorView+AFNetworking.h */,
+				5D7545895C50EF073551188E /* UIActivityIndicatorView+AFNetworking.m */,
+				3B59791D1392F4E08C714B64 /* UIAlertView+AFNetworking.h */,
+				960DFA4844814D829F5D744E /* UIAlertView+AFNetworking.m */,
+				ADAC4EA0602D903B4EBB42BA /* UIButton+AFNetworking.h */,
+				4AE18A36086BAE2DB0E0137D /* UIButton+AFNetworking.m */,
+				FE810E14CDDA4B8840A5E06F /* UIImageView+AFNetworking.h */,
+				5BB988FE79ECC7A14F50A58C /* UIImageView+AFNetworking.m */,
+				010262748769A67D017D60FA /* UIKit+AFNetworking.h */,
+				B19F3F252FD45D02D749A509 /* UIProgressView+AFNetworking.h */,
+				AB6B16347138EA14092E10BB /* UIProgressView+AFNetworking.m */,
+				F2DA35ACE76F0B4B774E5EFA /* UIRefreshControl+AFNetworking.h */,
+				344A0BF70BA8E6FA508EF2F3 /* UIRefreshControl+AFNetworking.m */,
+				0E1B86DA26159E578FCF2DB6 /* UIWebView+AFNetworking.h */,
+				0C0D984C4716A3380D962078 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		BA37122DDB6A6F12964805F5 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				96D28361B4F3A43909732712 /* AFNetworkReachabilityManager.h */,
+				83B9B60E18BA0A9FA4A1D67F /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		C1DB233D8989C7ADC15E2BD6 /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				33F4AC62ACC6F6AC6A27BEA4 /* AFHTTPRequestOperation.h */,
+				3C5C9F33C9862A6BE73E02C1 /* AFHTTPRequestOperation.m */,
+				CEA5A97F35E7858F227DCFD0 /* AFHTTPRequestOperationManager.h */,
+				CBA391B05AD7D2C8ED79E250 /* AFHTTPRequestOperationManager.m */,
+				DDDA47412410E199D6F35EA3 /* AFURLConnectionOperation.h */,
+				895EEDB81C788D05A07C0924 /* AFURLConnectionOperation.m */,
 			);
 			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		C2329F9E5B1B0B2EF7B14B1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D6723BFC06CAB30FF15FCDE /* AFNetworking */,
+				F1433A070C545097E5571CDA /* SDWebImage */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C444C1327ED5EE1D927CADD6 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				3B320D8E8B51E0A412B5AA68 /* AFHTTPSessionManager.h */,
+				EC0ED750BF9381D5A1E4AAD0 /* AFHTTPSessionManager.m */,
+				6695B6367CAD8DA7C56C6DB7 /* AFURLSessionManager.h */,
+				575E211202D8E0EEF0723C43 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		D1CEA3AB24A4817F14BEF95C = {
+			isa = PBXGroup;
+			children = (
+				117871794E7147FE0C1635FE /* Podfile */,
+				DAB9C797038FAE10C3CE5538 /* Frameworks */,
+				C2329F9E5B1B0B2EF7B14B1C /* Pods */,
+				D3D365356262874AB0860387 /* Products */,
+				8895AA3F18466FD015FB3470 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D3D365356262874AB0860387 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16ABD8576219D6B029BBBB31 /* libPods.a */,
+				D8B3E3DEF2EA6EB3C9E88E71 /* libPods-AFNetworking.a */,
+				1AACF0192D9DBB1B34C2F985 /* libPods-SDWebImage.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAB9C797038FAE10C3CE5538 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D39F72A1400465626F93A21 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1433A070C545097E5571CDA /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				90AB99E2C9521FFCA4998D39 /* Core */,
+				0D6C9A686682913AF118E548 /* Support Files */,
+			);
+			path = SDWebImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0E29C54757B01E3B5EFF5A8D /* Headers */ = {
+		1C3BBD578F6AED6A51349660 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D74FE2BB030F52AF188BEB3 /* AFHTTPRequestOperation.h in Headers */,
-				3C1FF821BDAB47DC46D372B7 /* AFHTTPRequestOperationManager.h in Headers */,
-				F5F5D28A6E37730B80DCC578 /* AFHTTPSessionManager.h in Headers */,
-				EEC8F611979590F61BBDC6D1 /* AFNetworkActivityIndicatorManager.h in Headers */,
-				13EAE236516B17CA0F227622 /* AFNetworkReachabilityManager.h in Headers */,
-				C5A4F5B56A0D197DC2F529A0 /* AFNetworking.h in Headers */,
-				49F4B3B08A7AA1DB42D8B13E /* AFSecurityPolicy.h in Headers */,
-				76C418C29055956AB0B4AB64 /* AFURLConnectionOperation.h in Headers */,
-				8C2BB7180E718C2547CF0679 /* AFURLRequestSerialization.h in Headers */,
-				9D1C26BF53D4ACC724C19A09 /* AFURLResponseSerialization.h in Headers */,
-				60BCB1514B33FAF179837A21 /* AFURLSessionManager.h in Headers */,
-				1E2A2DAE736D21A4AF142141 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
-				E1DE451ED76087537384E3D2 /* UIAlertView+AFNetworking.h in Headers */,
-				59F653ACC4641F94D1964899 /* UIButton+AFNetworking.h in Headers */,
-				113361466B1AD7DA2752F9F7 /* UIImageView+AFNetworking.h in Headers */,
-				DCDA1549CBB4659640E4810E /* UIKit+AFNetworking.h in Headers */,
-				F3AE2BB2F898272C796B90FD /* UIProgressView+AFNetworking.h in Headers */,
-				90DC36B2F29DC8F2FAF3A414 /* UIRefreshControl+AFNetworking.h in Headers */,
-				9102D2C808B1F02F1BB19D81 /* UIWebView+AFNetworking.h in Headers */,
+				1C202DFC0863EDEE52CA3E29 /* NSData+ImageContentType.h in Headers */,
+				AB0350434D58FFCE0E450F3B /* SDImageCache.h in Headers */,
+				9E073D670E397569FC6FA063 /* SDWebImageCompat.h in Headers */,
+				E8780BD7ED8123DBA8A7FFCA /* SDWebImageDecoder.h in Headers */,
+				8DE7529CC886B399709E3FB7 /* SDWebImageDownloader.h in Headers */,
+				F4763C8D5ED76880E7032F70 /* SDWebImageDownloaderOperation.h in Headers */,
+				102482AA4BF39F655ED1B8C6 /* SDWebImageManager.h in Headers */,
+				8F1248EF61C0489849CC32B0 /* SDWebImageOperation.h in Headers */,
+				68B8618B41B53AE882ACB964 /* SDWebImagePrefetcher.h in Headers */,
+				8068F627EDE0CEEBDF3A57B1 /* UIButton+WebCache.h in Headers */,
+				1AF17BF2713A672B6F4DA797 /* UIImage+GIF.h in Headers */,
+				2A8E3BB676B64ED4EEA605A4 /* UIImage+MultiFormat.h in Headers */,
+				7F4AC40C4990A439A4005C9E /* UIImageView+HighlightedWebCache.h in Headers */,
+				0DE68651DC84089878F764B8 /* UIImageView+WebCache.h in Headers */,
+				44A842985268942861E2EB9C /* UIView+WebCacheOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCFE8C13B30F300B4A76809C /* Headers */ = {
+		C7315D78A2F6707B489FECAD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				951752DBBD7143EF686D5C00 /* NSData+ImageContentType.h in Headers */,
-				38A520A064CCE180921BDAD9 /* SDImageCache.h in Headers */,
-				8EEF6386B76E2082ECF4D4F0 /* SDWebImageCompat.h in Headers */,
-				F1AF08E7E716E749CF720EDC /* SDWebImageDecoder.h in Headers */,
-				66582164942AD421938B1BDF /* SDWebImageDownloader.h in Headers */,
-				53378B27F7F58D7303E27C7E /* SDWebImageDownloaderOperation.h in Headers */,
-				1BF78CFA0A2EBDD72CE3A233 /* SDWebImageManager.h in Headers */,
-				2F01CE30934849BB398AD062 /* SDWebImageOperation.h in Headers */,
-				6A9284219FF70B2547C78D95 /* SDWebImagePrefetcher.h in Headers */,
-				295EA3B34BE809124659900F /* UIButton+WebCache.h in Headers */,
-				4A02808B8636AE7F0B664F64 /* UIImage+GIF.h in Headers */,
-				1F63C97512B99D5F96F1D132 /* UIImage+MultiFormat.h in Headers */,
-				578FE491FD607345B64BB54F /* UIImageView+HighlightedWebCache.h in Headers */,
-				76FC0D2204B1A1A5891C37B8 /* UIImageView+WebCache.h in Headers */,
-				9B6194D025F083D85C3F43DB /* UIView+WebCacheOperation.h in Headers */,
+				035ADC12E463B5F421934BA6 /* AFHTTPRequestOperation.h in Headers */,
+				99BD6376AEE9F799C7A714A1 /* AFHTTPRequestOperationManager.h in Headers */,
+				05F84909FD7ABDADE2F64DE6 /* AFHTTPSessionManager.h in Headers */,
+				5CBE13C8C0342DADF147E666 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				6BFDF73A88545A3C1E61A0B1 /* AFNetworkReachabilityManager.h in Headers */,
+				54C7FDE73B319597DD120295 /* AFNetworking.h in Headers */,
+				03E3956CAB3F19F99A902D20 /* AFSecurityPolicy.h in Headers */,
+				D62DBE66639DFA7A58307557 /* AFURLConnectionOperation.h in Headers */,
+				93A983E73368A4186A42C940 /* AFURLRequestSerialization.h in Headers */,
+				B496CB0AEECFC6546F4EC06C /* AFURLResponseSerialization.h in Headers */,
+				828825FFDDF4B568B7463992 /* AFURLSessionManager.h in Headers */,
+				F29E7EBAD27112F53A8CDE78 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				AC5D1BCF3FEC0AFF75D6C25B /* UIAlertView+AFNetworking.h in Headers */,
+				22857B1C217A95AD3D5B11A2 /* UIButton+AFNetworking.h in Headers */,
+				B99B6CD106A1469235642385 /* UIImageView+AFNetworking.h in Headers */,
+				FF917057D7F5D211C14D4129 /* UIKit+AFNetworking.h in Headers */,
+				7856573A62FA41CE16BFDB7E /* UIProgressView+AFNetworking.h in Headers */,
+				EBB06341C1E764B774E2A800 /* UIRefreshControl+AFNetworking.h in Headers */,
+				21999F82D4F4A1FA7B1E8597 /* UIWebView+AFNetworking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		321AA211C004F2E23299C441 /* Pods */ = {
+		240D2F8CC5FE4ACEE404D86F /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7DC99C7EA1A24A079E9D05D8 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 1C366C6065F166163141F987 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				52458849BB853B5C7BED1A47 /* Sources */,
-				E222E8A5E4A42C92368EE082 /* Frameworks */,
+				C30781FA1AB3C9F9DB5BEBF8 /* Sources */,
+				C24606EEBBCDCA60CFA86D99 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1704E30485633E38F4DEBA76 /* PBXTargetDependency */,
-				0D3D5D2EFD254D971A160408 /* PBXTargetDependency */,
+				78F8636A0D09D3CC5EED05D9 /* PBXTargetDependency */,
+				818E222032087B783A3D7826 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 4F94A79E4BE859F206D532B6 /* libPods.a */;
+			productReference = 16ABD8576219D6B029BBBB31 /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		32D53140E76CFE7B33D0F148 /* Pods-SDWebImage */ = {
+		8CB92E69BEDDCAEF36ECFCF8 /* Pods-SDWebImage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F41A887BE5A968FE7BDFFB9 /* Build configuration list for PBXNativeTarget "Pods-SDWebImage" */;
+			buildConfigurationList = 5D24D30BC6CBF52F1E553B79 /* Build configuration list for PBXNativeTarget "Pods-SDWebImage" */;
 			buildPhases = (
-				FBBFB3CE7A4578668DE22F2E /* Sources */,
-				BE0746DA2EFA832E3B7B822F /* Frameworks */,
-				BCFE8C13B30F300B4A76809C /* Headers */,
+				CB133345CF8DE268912DF43E /* Sources */,
+				0E6E63A52448BA67C3C06F3B /* Frameworks */,
+				1C3BBD578F6AED6A51349660 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -549,16 +549,16 @@
 			);
 			name = "Pods-SDWebImage";
 			productName = "Pods-SDWebImage";
-			productReference = 6176860A2EA5AD77E0A816C4 /* libPods-SDWebImage.a */;
+			productReference = 1AACF0192D9DBB1B34C2F985 /* libPods-SDWebImage.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		54DCE81C3851993ADA497C1E /* Pods-AFNetworking */ = {
+		CFBDFEFBFCCBED84A8304255 /* Pods-AFNetworking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 541726C01278AC015E7606F0 /* Build configuration list for PBXNativeTarget "Pods-AFNetworking" */;
+			buildConfigurationList = CB9F4178D54B820B8AE30BA6 /* Build configuration list for PBXNativeTarget "Pods-AFNetworking" */;
 			buildPhases = (
-				E8C6958FD00ABD15415FF259 /* Sources */,
-				F8175E5650AAF096462BB4CB /* Frameworks */,
-				0E29C54757B01E3B5EFF5A8D /* Headers */,
+				5B2E45902763A66297A6C12C /* Sources */,
+				4340BD915FEB5CFBC122F8CE /* Frameworks */,
+				C7315D78A2F6707B489FECAD /* Headers */,
 			);
 			buildRules = (
 			);
@@ -566,111 +566,127 @@
 			);
 			name = "Pods-AFNetworking";
 			productName = "Pods-AFNetworking";
-			productReference = 234E72A3AE7CE54A95889B1A /* libPods-AFNetworking.a */;
+			productReference = D8B3E3DEF2EA6EB3C9E88E71 /* libPods-AFNetworking.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		14CE07894AACA40D7D9F26F6 /* Project object */ = {
+		AA0F7C4D7D1F3727BE1DFD73 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 2F84005AC85C1E4C606C3148 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = DA37DED22DE60609A94562AE /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = DC59E48DE773033FE9700B53;
-			productRefGroup = 415C8CBE2783E4532F4F7D76 /* Products */;
+			mainGroup = D1CEA3AB24A4817F14BEF95C;
+			productRefGroup = D3D365356262874AB0860387 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				321AA211C004F2E23299C441 /* Pods */,
-				54DCE81C3851993ADA497C1E /* Pods-AFNetworking */,
-				32D53140E76CFE7B33D0F148 /* Pods-SDWebImage */,
+				240D2F8CC5FE4ACEE404D86F /* Pods */,
+				CFBDFEFBFCCBED84A8304255 /* Pods-AFNetworking */,
+				8CB92E69BEDDCAEF36ECFCF8 /* Pods-SDWebImage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		52458849BB853B5C7BED1A47 /* Sources */ = {
+		5B2E45902763A66297A6C12C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E89C60A92D459FDE33988F7D /* Pods-dummy.m in Sources */,
+				77C0E9A247AD1BBD4C263DE9 /* AFHTTPRequestOperation.m in Sources */,
+				8F8726105D7641D1FE59D015 /* AFHTTPRequestOperationManager.m in Sources */,
+				046AAA4DE3F0D9884A1977F5 /* AFHTTPSessionManager.m in Sources */,
+				F9BBF72FF7B6D0A4C6B804E1 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				988460B6B4AC4B9E9BE9A524 /* AFNetworkReachabilityManager.m in Sources */,
+				8066E14EB9B8D2411F3B4124 /* AFSecurityPolicy.m in Sources */,
+				805F8EC8301EBA2ACA55BCDF /* AFURLConnectionOperation.m in Sources */,
+				8B8BA096FDE65EBCF73B8A88 /* AFURLRequestSerialization.m in Sources */,
+				44960DE87241670EE563394F /* AFURLResponseSerialization.m in Sources */,
+				063A8F47DF5F0E6E62517AF4 /* AFURLSessionManager.m in Sources */,
+				28489D79090DA4C483AD698A /* Pods-AFNetworking-dummy.m in Sources */,
+				EF18192257377369EB8C6864 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				3C23AE7CEF6B3F9D397D77DB /* UIAlertView+AFNetworking.m in Sources */,
+				075CC06CE9D58C7EF64C8966 /* UIButton+AFNetworking.m in Sources */,
+				A1D09ED873B74D0EA18DC210 /* UIImageView+AFNetworking.m in Sources */,
+				5DB2CD0F63758956F66F7E30 /* UIProgressView+AFNetworking.m in Sources */,
+				83AA0D5F4DD3E628483E45E7 /* UIRefreshControl+AFNetworking.m in Sources */,
+				6227EDBC5480211C65AC0CA7 /* UIWebView+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8C6958FD00ABD15415FF259 /* Sources */ = {
+		C30781FA1AB3C9F9DB5BEBF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91EB9C929FA5E0B41C6D8182 /* AFHTTPRequestOperation.m in Sources */,
-				2E6F4DBC2FBF7F144EB5C0EC /* AFHTTPRequestOperationManager.m in Sources */,
-				FCA6B804F3AFCB9803B7AA42 /* AFHTTPSessionManager.m in Sources */,
-				F0F44511C194E2CF6D5E9774 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				CE2D32D1B24BBD89F4B9AB6F /* AFNetworkReachabilityManager.m in Sources */,
-				F7A2917821434A31B2329406 /* AFSecurityPolicy.m in Sources */,
-				B3BA86A8CEAE3995C86AC4C5 /* AFURLConnectionOperation.m in Sources */,
-				C7FAA4522DD0B71A8CDBFAE4 /* AFURLRequestSerialization.m in Sources */,
-				ECE3583F55152B2D5592F81D /* AFURLResponseSerialization.m in Sources */,
-				DA9F6E3999D88698222D9CDD /* AFURLSessionManager.m in Sources */,
-				94E99D5AA36210B56D2D2278 /* Pods-AFNetworking-dummy.m in Sources */,
-				55929DAB638C4F5C22DD0D11 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				20FCF54F4AF5F2CCAA7BF894 /* UIAlertView+AFNetworking.m in Sources */,
-				DB118574ADE3FB99F0C741E7 /* UIButton+AFNetworking.m in Sources */,
-				787490F3895D7312EF1B9341 /* UIImageView+AFNetworking.m in Sources */,
-				3E226A66CB360383668B714E /* UIProgressView+AFNetworking.m in Sources */,
-				A894B4F073293A68E369C11E /* UIRefreshControl+AFNetworking.m in Sources */,
-				408C40E6458FE5A330B3A82A /* UIWebView+AFNetworking.m in Sources */,
+				DEB97C5838E696EC4DDD38F4 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBBFB3CE7A4578668DE22F2E /* Sources */ = {
+		CB133345CF8DE268912DF43E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCB97AACFC736863FB1A2424 /* NSData+ImageContentType.m in Sources */,
-				A687410AE72348F3A9189806 /* Pods-SDWebImage-dummy.m in Sources */,
-				4A093EA61F8CCC6FF83F7543 /* SDImageCache.m in Sources */,
-				6A06FDEE8FB194E3F2D489E0 /* SDWebImageCompat.m in Sources */,
-				6E10F630C4D7C68E6D713996 /* SDWebImageDecoder.m in Sources */,
-				96C59D6D7A327FE7DBF44503 /* SDWebImageDownloader.m in Sources */,
-				19E4013F397647FE1D6158F7 /* SDWebImageDownloaderOperation.m in Sources */,
-				99B81149DB5F0A873C77C974 /* SDWebImageManager.m in Sources */,
-				DEF56FBB41C817BC3244C066 /* SDWebImagePrefetcher.m in Sources */,
-				72F441D7B839931FF3327F39 /* UIButton+WebCache.m in Sources */,
-				F977FE0316540BC5B443584F /* UIImage+GIF.m in Sources */,
-				2C6A1B5D71DAFF34C009126C /* UIImage+MultiFormat.m in Sources */,
-				7895FEA71C1E08D25CADE950 /* UIImageView+HighlightedWebCache.m in Sources */,
-				8EB0FC2B6E36DF564FF4B9F6 /* UIImageView+WebCache.m in Sources */,
-				A66140C8CDB899CD3A75E73E /* UIView+WebCacheOperation.m in Sources */,
+				1C42BF36C1E0BCE0ED86855F /* NSData+ImageContentType.m in Sources */,
+				44E1BB71813EFEF063636573 /* Pods-SDWebImage-dummy.m in Sources */,
+				BCD8819C1B906B2B1343E2E9 /* SDImageCache.m in Sources */,
+				C22DEFBD77AEE9ED97122C9D /* SDWebImageCompat.m in Sources */,
+				54345360BD60E440EDF37B17 /* SDWebImageDecoder.m in Sources */,
+				7D5A6455861DFDB89479B5C8 /* SDWebImageDownloader.m in Sources */,
+				21AF149BFFE29881CDD52741 /* SDWebImageDownloaderOperation.m in Sources */,
+				8E456C17E64C734CB4CEEF97 /* SDWebImageManager.m in Sources */,
+				4BB8AB7056B35FE1B1838799 /* SDWebImagePrefetcher.m in Sources */,
+				9F451B254F5600D55DD065FD /* UIButton+WebCache.m in Sources */,
+				11292663E67E8AC0F80CB47C /* UIImage+GIF.m in Sources */,
+				7BB38DEAB4D452D81DD3F079 /* UIImage+MultiFormat.m in Sources */,
+				733CA671BC0EF9080A13265A /* UIImageView+HighlightedWebCache.m in Sources */,
+				768B574634B5E0CA1CC30C37 /* UIImageView+WebCache.m in Sources */,
+				F64E13425614775B37867437 /* UIView+WebCacheOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0D3D5D2EFD254D971A160408 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-SDWebImage";
-			target = 32D53140E76CFE7B33D0F148 /* Pods-SDWebImage */;
-			targetProxy = 0E8A2E4E672A9255DC480301 /* PBXContainerItemProxy */;
-		};
-		1704E30485633E38F4DEBA76 /* PBXTargetDependency */ = {
+		78F8636A0D09D3CC5EED05D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-AFNetworking";
-			target = 54DCE81C3851993ADA497C1E /* Pods-AFNetworking */;
-			targetProxy = B37C48588A28FB950C9B85AC /* PBXContainerItemProxy */;
+			target = CFBDFEFBFCCBED84A8304255 /* Pods-AFNetworking */;
+			targetProxy = 14D6A8CD7C38198996FD59A5 /* PBXContainerItemProxy */;
+		};
+		818E222032087B783A3D7826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SDWebImage";
+			target = 8CB92E69BEDDCAEF36ECFCF8 /* Pods-SDWebImage */;
+			targetProxy = 05BDBAF6E4A551FD9093E85D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5B2CD1CB1CCD81BB2AFF1EEC /* Release */ = {
+		09D26522A0A082101568A4B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF1A45EAA28B99E2F9825FEF /* Pods-SDWebImage-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDWebImage/Pods-SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		15E30FE3ECDA6DBE98E232E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -704,9 +720,9 @@
 			};
 			name = Release;
 		};
-		8839CEBC0D7BEF8E2F767075 /* Debug */ = {
+		3A2A9D49F4D030A57EBC125A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B36BE7E94C29B96C2AC6087 /* Pods-AFNetworking-Private.xcconfig */;
+			baseConfigurationReference = 0A4D6F8D6035AF0FBA9DF7D6 /* Pods-AFNetworking-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-AFNetworking/Pods-AFNetworking-prefix.pch";
@@ -720,23 +736,23 @@
 			};
 			name = Debug;
 		};
-		9E8D36E0EC676E770531A7DF /* Debug */ = {
+		4F7FEC9EB66C85995AF6A9FE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA473EBFFA763C9F97F3B622 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 0A4D6F8D6035AF0FBA9DF7D6 /* Pods-AFNetworking-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AFNetworking/Pods-AFNetworking-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		AF1E0115BCA54596F8630B07 /* Debug */ = {
+		6EF97A7F0B3D4F0984B53972 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -775,9 +791,41 @@
 			};
 			name = Debug;
 		};
-		C1331F92DE720D9A1C52175B /* Release */ = {
+		92956C4697A8FF5792A583E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F257607D14CD70B73D19060 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 04459D29B434A0089222109D /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A28DEC36EA1B7B6C57C0BCD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF1A45EAA28B99E2F9825FEF /* Pods-SDWebImage-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDWebImage/Pods-SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FC237B95D138B1E9F0642B59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82C2859E64C90CBC81A572C8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -791,94 +839,46 @@
 			};
 			name = Release;
 		};
-		C9A4B606588463C27C114D51 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74207CEFE676BF088053BB9F /* Pods-SDWebImage-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDWebImage/Pods-SDWebImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		E9D905354B2FF1ED7C4DC39F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B36BE7E94C29B96C2AC6087 /* Pods-AFNetworking-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-AFNetworking/Pods-AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		FB6E6641698D4BFFC44CB356 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74207CEFE676BF088053BB9F /* Pods-SDWebImage-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDWebImage/Pods-SDWebImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F84005AC85C1E4C606C3148 /* Build configuration list for PBXProject "Pods" */ = {
+		1C366C6065F166163141F987 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AF1E0115BCA54596F8630B07 /* Debug */,
-				5B2CD1CB1CCD81BB2AFF1EEC /* Release */,
+				92956C4697A8FF5792A583E7 /* Debug */,
+				FC237B95D138B1E9F0642B59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		541726C01278AC015E7606F0 /* Build configuration list for PBXNativeTarget "Pods-AFNetworking" */ = {
+		5D24D30BC6CBF52F1E553B79 /* Build configuration list for PBXNativeTarget "Pods-SDWebImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8839CEBC0D7BEF8E2F767075 /* Debug */,
-				E9D905354B2FF1ED7C4DC39F /* Release */,
+				09D26522A0A082101568A4B9 /* Debug */,
+				A28DEC36EA1B7B6C57C0BCD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F41A887BE5A968FE7BDFFB9 /* Build configuration list for PBXNativeTarget "Pods-SDWebImage" */ = {
+		CB9F4178D54B820B8AE30BA6 /* Build configuration list for PBXNativeTarget "Pods-AFNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB6E6641698D4BFFC44CB356 /* Debug */,
-				C9A4B606588463C27C114D51 /* Release */,
+				3A2A9D49F4D030A57EBC125A /* Debug */,
+				4F7FEC9EB66C85995AF6A9FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7DC99C7EA1A24A079E9D05D8 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		DA37DED22DE60609A94562AE /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E8D36E0EC676E770531A7DF /* Debug */,
-				C1331F92DE720D9A1C52175B /* Release */,
+				6EF97A7F0B3D4F0984B53972 /* Debug */,
+				15E30FE3ECDA6DBE98E232E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 14CE07894AACA40D7D9F26F6 /* Project object */;
+	rootObject = AA0F7C4D7D1F3727BE1DFD73 /* Project object */;
 }

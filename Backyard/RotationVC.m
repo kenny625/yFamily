@@ -52,10 +52,7 @@ static NSString * const reuseIdentifier = @"Cell";
     //initial the collecitonView
     self.rotationCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, width, 400.0f) collectionViewLayout:[[RotationLayout alloc] init]];
 
-    NSArray *testImgs = [NSArray arrayWithObjects:@"Img-Test1.jpg", @"Img-Test1.jpg", @"Img-Test1.jpg", @"Img-Test1.jpg", @"Img-Test1.jpg", @"Img-Test1.jpg", nil];
-    NSArray *testNames = [NSArray arrayWithObjects:@"Keiko",@"Keiko", @"Keiko",@"Keiko",@"Keiko",@"Keiko",nil];
 
-    
     //call api
     [[BackyardClient sharedInstance] getEmployeesWithCompletion:^(NSArray *employees, NSError *error) {
         //        employees
@@ -74,33 +71,26 @@ static NSString * const reuseIdentifier = @"Cell";
             self.friendsView = [[FriendsView alloc] init:self.friendsViewFrame cellCount:6 contacts:contacts];
             self.friendsView.delegate = self;
             [self.view addSubview:self.friendsView];
-            // add mask view
-            //[self addFriendMaskView];
+            //initial and add maskView in front of friendsView
+            self.maskView = [[UIView alloc] initWithFrame:self.friendsViewFrame];
+            [self.view addSubview:self.maskView];
         }];
     }];
-    
-    
-   // self.friendsView = [[FriendsView alloc] init:friendsViewFrame cellCount:6 images:testImgs names:testNames];
 
     //add background view
     CGRect bgFrame = CGRectMake(-40, 0, self.rotationCollectionView.frame.size.width+40, self.rotationCollectionView.frame.size.height);
+    if (self.bgView != nil) {
+        [self.bgView removeFromSuperview];
+    }
     self.bgView = [[UIImageView alloc] initWithFrame:bgFrame];
 
     UIImage *bgImg = [self blurryImage:[UIImage imageNamed:@"Img-Background4.png"] withBlurLevel:10];
     [self.bgView setBackgroundColor:[[UIColor alloc] initWithPatternImage:bgImg]];
     [self.view addSubview:self.bgView];
-   
-    /*UIView *bgViewMask = [[UIView alloc] initWithFrame:self.rotationCollectionView.frame];
-    [bgViewMask setBackgroundColor:[UIColor whiteColor]];
-    bgViewMask.alpha = 0.5f;
-    [self.view addSubview:bgViewMask];
-    */
-
 
     [self.rotationCollectionView setBackgroundColor:[UIColor clearColor]];
     // Register cell classes
     [self.rotationCollectionView registerNib:[UINib nibWithNibName:@"RotationCell" bundle:nil] forCellWithReuseIdentifier:@"RotationCell"];
-
     
     self.rotationCollectionView.delegate = self;
     self.rotationCollectionView.dataSource = self;
@@ -128,16 +118,14 @@ static NSString * const reuseIdentifier = @"Cell";
          CIContext *context = [CIContext contextWithOptions:nil]; // save it to self.context
          CGImageRef outImage = [context createCGImage:outputImage fromRect:[outputImage extent]];
          return [UIImage imageWithCGImage:outImage];
-    }
+}
      
 - (void)addFriendMaskView {
-    self.maskView = [[UIView alloc] initWithFrame:self.friendsViewFrame];
     self.maskView.backgroundColor = [UIColor grayColor];
     self.maskView.alpha = 0.5f;
-    [self.view addSubview:self.maskView];
 }
 - (void)removeFriendMaskView {
-    [self.maskView removeFromSuperview];
+    self.maskView.backgroundColor = [UIColor clearColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -221,7 +209,6 @@ static NSString * const reuseIdentifier = @"Cell";
  */
 -(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"row = %lu", indexPath.row);
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -259,9 +246,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
-    NSLog(@"begin dragging");
     [self addFriendMaskView];
-    //self.maskView.backgroundColor = [UIColor grayColor];
 }
 
 -(void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView
@@ -272,8 +257,6 @@ static NSString * const reuseIdentifier = @"Cell";
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     [self scrollDidStopped:scrollView];
-    NSLog(@"end decel");
-    
 }
 
 - (void)scrollDidStopped:(UIScrollView *)scrollView {
@@ -282,20 +265,27 @@ static NSString * const reuseIdentifier = @"Cell";
     [self removeFriendMaskView];
     //Move to the center
     int index = (targetX + 0.5 * ITEM_WIDTH)/ITEM_WIDTH - 1;
-    [scrollView setContentOffset:CGPointMake((index+1) * ITEM_WIDTH, 0)];
-    /*********
-     if index == 19, call next 20 data
-     *********/
     index = index % 20;
-  
+    if(index == 0) {
+        targetX = 0;
+        //load next
+        [[BackyardClient sharedInstance] getNextEmployeesWithCompletion:^(NSArray *employees, NSError *error) {
+            self.employees = [[NSMutableArray alloc] initWithArray:employees];
+            [self.rotationCollectionView reloadData];
+        }];
+        
+    }
+    [scrollView setContentOffset:CGPointMake((index+1) * ITEM_WIDTH, 0)];
+    
     NSIndexPath *focusedIndex = [NSIndexPath indexPathForRow:index inSection:0];
     
     self.focusedCell = [self.rotationCollectionView cellForItemAtIndexPath:focusedIndex];
     
     self.focusedEmployee = self.employees[index];
+    //for debugging
     NSLog(@"byid = %@",[self.employees[index] backyardId]);
-    //clear the mask
-    self.maskView.backgroundColor = [UIColor clearColor];
+
+
     SDWebImageManager *manager = [SDWebImageManager sharedManager];
     NSURL *backgroundImageURL = (NSURL *)[NSString stringWithFormat:@"http://build2.adp.corp.tw1.yahoo.com:3000/v1/users/%@/backgroundImage",
      self.focusedEmployee.backyardId];
@@ -321,8 +311,6 @@ static NSString * const reuseIdentifier = @"Cell";
                                 transition.type = kCATransitionFade;
                                 
                                 [self.bgView.layer addAnimation:transition forKey:nil];
-                                
-                                
                             }
                         }];
     
@@ -343,7 +331,6 @@ static NSString * const reuseIdentifier = @"Cell";
 
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
-    NSLog(@"end dragging");
 }
 
 - (IBAction)didUpSwipe:(UISwipeGestureRecognizer *)sender {
@@ -352,6 +339,7 @@ static NSString * const reuseIdentifier = @"Cell";
     //present detail view
     NSString *urlStr = [self.focusedEmployee tumblrUrl];
     NSURL *url = [NSURL URLWithString:urlStr];
+    //for debugging
     NSLog(@"url========%@", urlStr);
     if ([urlStr length] > 17) {
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -369,18 +357,8 @@ static NSString * const reuseIdentifier = @"Cell";
         
         //custom animation for presentVC
         [self.view.window.layer addAnimation:transition forKey:nil];
-
- 
         [self.navigationController pushViewController:webViewController animated:YES];
     }
-    
-    //改成用 webview 打 tumblr
-    /*
-    DetailViewController *detailView = [[DetailViewController alloc] init];
-    [self.navigationController presentViewController:detailView animated:YES completion:^{
-        //completed presenting detail view
-    }];
-     */
 }
 
 #pragma mark - InvisibleButtonDelegate

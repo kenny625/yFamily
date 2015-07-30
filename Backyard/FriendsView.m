@@ -16,27 +16,13 @@
 @end
 @implementation FriendsView
 
-
-- (id)init:(CGRect)frame cellCount:(NSUInteger)cellCount images:(NSArray *)images names:(NSArray *)names{
-    self = [super init];
-    if (self) {
-        [self setBackgroundColor:[[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Img-Background8.png"]]];
-        self.frame = frame;
-        [self setupCells:cellCount images:images names:names];
-    }
-    return self;
-}
-
-
 - (id)init:(CGRect)frame cellCount:(NSUInteger)cellCount contacts:(NSArray *)contacts {
     self = [super init];
     
     if (self) {
-        
        CGRect bgFrame = CGRectMake(-40, -40, frame.size.width+40, frame.size.height+40);
         UIView *bgView = [[UIView alloc] initWithFrame:bgFrame];
         UIImage *bgImg = [self blurryImage:[UIImage imageNamed:@"Img-Background10.png"] withBlurLevel:10];
-        //[self setBackgroundColor:[[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Img-Background10.png"]]];
         [bgView setBackgroundColor:[[UIColor alloc] initWithPatternImage:bgImg]];
         [self addSubview:bgView];
         
@@ -73,7 +59,6 @@
     }
     
     cellCount = cellCount > [contacts count] ? [contacts count] : cellCount;
-    NSLog(@"contactCount = %ld", [contacts count]);
     [self setupCells:cellCount images:imgArr names:nameArr];
 }
 
@@ -159,7 +144,6 @@
             [self setupInvisibleButton:frame index:i*maxCellsInRow + j];
         }
     }
-    
 }
 
 - (void) setupInvisibleButton:(CGRect)frame index:(NSInteger)index {
@@ -174,15 +158,6 @@
 //delegate to main view (RotationVC)
 - (void) invisibleButtonAction:(UIButton *)sender {
     [self.delegate invisibleButtonAction:sender];
-    
-    //sender.tag; // index of the touched button
-    /*
-    NSLog(@"%ld", sender.tag);
-    
-    NSLog(@"url =====%@", [self.contacts[sender.tag] tumblrUrl]);
-    UIWebView *view = [[UIWebView alloc] initWithFrame:self.frame];
-    */
-    
 }
 
 @end
