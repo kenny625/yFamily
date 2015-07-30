@@ -25,7 +25,6 @@
 @property (strong, nonatomic) UICollectionViewCell *focusedCell;
 @property (strong, nonatomic) NSMutableArray *focusedContacts;
 @property (strong, nonatomic) IBOutlet UICollectionView *rotationCollectionView;
-@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *upSwipe;
 @property (assign, nonatomic) BOOL isDragging;
 @property (assign, nonatomic) CGRect friendsViewFrame;
 @property (strong, nonatomic) UIImage *backgroundImage;
@@ -48,7 +47,6 @@ static NSString * const reuseIdentifier = @"Cell";
     float height = self.view.frame.size.height;
     self.friendsViewFrame = CGRectMake(0.0f, 400.0f, width, height-380.0f);
     
-    [self.rotationCollectionView addGestureRecognizer:self.upSwipe];
     //initial the collecitonView
     self.rotationCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, width, 400.0f) collectionViewLayout:[[RotationLayout alloc] init]];
 
@@ -96,8 +94,14 @@ static NSString * const reuseIdentifier = @"Cell";
     self.rotationCollectionView.dataSource = self;
     [self.view addSubview:self.rotationCollectionView];
     
+    UISwipeGestureRecognizer *swipeGestureRecognizer;
+    swipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didUpSwipe:)];
+    swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionUp;
+    [self.view addGestureRecognizer:swipeGestureRecognizer];
+    
     
     UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(moveViewWithGestureRecognizer:)];
+    [panGestureRecognizer requireGestureRecognizerToFail:swipeGestureRecognizer];
     [self.view addGestureRecognizer:panGestureRecognizer];
     
     self.searchBar = [[UISearchBar alloc] init];
@@ -110,7 +114,6 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)moveViewWithGestureRecognizer:(UIPanGestureRecognizer*)panGestureRecognizer {
     CGPoint velocity = [panGestureRecognizer velocityInView:self.view];
     if (velocity.y > 50) {
-        
         self.navigationItem.titleView = self.searchBar;
     }
 }
@@ -242,7 +245,6 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     //It there a better place to set the recognizer??
-    [scrollView addGestureRecognizer:self.upSwipe];
  //   [scrollView setBackgroundColor:[[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Img-Background.jpg"]]];
     //无限循环...
     
