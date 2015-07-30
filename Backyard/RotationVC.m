@@ -176,8 +176,6 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //[self.rotationCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:<#(UICollectionViewScrollPosition)#> animated:<#(BOOL)#>];
-    
     //cell size
     return CGSizeMake(120.0f, 120.0f);
 }
@@ -187,11 +185,7 @@ static NSString * const reuseIdentifier = @"Cell";
     RotationCell *cell;
 
     cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"RotationCell" forIndexPath:indexPath];
-    
-    /*
-    ((RotationCell *)cell).profileImage.image = [UIImage imageNamed:@"Img-Test1.jpg"];
-    ((RotationCell *)cell).nameLabel.text = [NSString stringWithFormat:@"index-%ld",indexPath.row];
-    */
+
     if ([self.employees count] > 0) {
     //setusername
     ((RotationCell *)cell).nameLabel.text = [self.employees[indexPath.row] username];
@@ -296,7 +290,7 @@ static NSString * const reuseIdentifier = @"Cell";
     //Move to the center
     int index = (targetX + 0.5 * ITEM_WIDTH)/ITEM_WIDTH - 1;
     index = index % 20;
-    if(index == 0) {
+    if(index == 18) {
         targetX = 0;
         //load next
         [[BackyardClient sharedInstance] getNextEmployeesWithCompletion:^(NSArray *employees, NSError *error) {
