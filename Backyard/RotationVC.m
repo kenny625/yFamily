@@ -17,7 +17,7 @@
 #import <SDWebImage/SDWebImageManager.h>
 
 
-@interface RotationVC ()  <UICollectionViewDataSource, UICollectionViewDelegate, UIScrollViewDelegate, InvisibleButtonDelegate>
+@interface RotationVC ()  <UICollectionViewDataSource, UICollectionViewDelegate, UIScrollViewDelegate, InvisibleButtonDelegate, UISearchBarDelegate>
 @property (strong, nonatomic) FriendsView *friendsView;
 @property (strong, nonatomic) UIView *maskView;
 @property (strong, nonatomic) NSMutableArray *employees;
@@ -30,6 +30,7 @@
 @property (assign, nonatomic) CGRect friendsViewFrame;
 @property (strong, nonatomic) UIImage *backgroundImage;
 @property (strong, nonatomic) UIImageView *bgView;
+@property (nonatomic, strong) UISearchBar *searchBar;
 
 @end
 
@@ -95,7 +96,34 @@ static NSString * const reuseIdentifier = @"Cell";
     self.rotationCollectionView.delegate = self;
     self.rotationCollectionView.dataSource = self;
     [self.view addSubview:self.rotationCollectionView];
+    
+    
+    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(moveViewWithGestureRecognizer:)];
+    [self.view addGestureRecognizer:panGestureRecognizer];
+    
+    self.searchBar = [[UISearchBar alloc] init];
+    self.searchBar.delegate = self;
+    [self.searchBar sizeToFit];
+    self.searchBar.showsCancelButton = YES;
 
+}
+
+- (void)moveViewWithGestureRecognizer:(UIPanGestureRecognizer*)panGestureRecognizer {
+    CGPoint velocity = [panGestureRecognizer velocityInView:self.view];
+    if (velocity.y > 50) {
+        
+        self.navigationItem.titleView = self.searchBar;
+    }
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    self.navigationItem.titleView = nil;
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"%@", searchBar.text);
+    self.navigationItem.titleView = nil;
+    self.navigationItem.title = searchBar.text;
 }
 
 -(void)viewWillAppear:(BOOL)animated {
