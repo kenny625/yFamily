@@ -31,7 +31,7 @@
 @property (strong, nonatomic) UIImage *backgroundImage;
 @property (strong, nonatomic) UIImageView *bgView;
 @property (nonatomic, strong) UISearchBar *searchBar;
-
+@property (assign, nonatomic) BOOL doUpdate;
 @end
 
 @implementation RotationVC
@@ -41,6 +41,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    self.doUpdate = YES;
     self.isDragging = YES;
     self.title = @"yFamily";
     //setup setting icon
@@ -123,6 +124,7 @@ static NSString * const reuseIdentifier = @"Cell";
         for (int i=0; i<[employees count]; i++) {
             self.employees[i] = employees[i];
         }
+        self.focusedEmployee = self.employees[0];
         [self shiftEmployeeData];
         [self.rotationCollectionView reloadData];
         
@@ -142,29 +144,33 @@ static NSString * const reuseIdentifier = @"Cell";
 
 -(void)viewWillAppear:(BOOL)animated {
     //update count
-    [[BackyardClient sharedInstance] getEmployeesWithCompletion:^(NSArray *employees, NSError *error) {
-        //        employees
-        self.employees = [[NSMutableArray alloc] initWithArray:employees];
-        [self shiftEmployeeData];
-        [self.rotationCollectionView reloadData];
-        /*
-         [[BackyardClient sharedInstance] getContactsWithId:@"" andCompletion:^(NSArray *contacts, NSError *error) {
-         // get contact
-         }];
-         */
-        
-        //init with index 19
-        [[BackyardClient sharedInstance] getContactsWithId:[self.employees[19] backyardId] andCompletion:^(NSArray *contacts, NSError *error) {
-            //update friends view
-            self.focusedContacts = [[NSMutableArray alloc] initWithArray: contacts];
-            self.friendsView = [[FriendsView alloc] init:self.friendsViewFrame cellCount:6 contacts:contacts];
-            self.friendsView.delegate = self;
-            [self.view addSubview:self.friendsView];
-            //initial and add maskView in front of friendsView
-            self.maskView = [[UIView alloc] initWithFrame:self.friendsViewFrame];
-            [self.view addSubview:self.maskView];
+    if (self.doUpdate) {
+        self.doUpdate = YES;
+        [[BackyardClient sharedInstance] getEmployeesWithCompletion:^(NSArray *employees, NSError *error) {
+            //        employees
+            self.employees = [[NSMutableArray alloc] initWithArray:employees];
+            [self shiftEmployeeData];
+            [self.rotationCollectionView reloadData];
+            /*
+             [[BackyardClient sharedInstance] getContactsWithId:@"" andCompletion:^(NSArray *contacts, NSError *error) {
+             // get contact
+             }];
+             */
+            
+            //init with index 19
+            [[BackyardClient sharedInstance] getContactsWithId:[self.employees[19] backyardId] andCompletion:^(NSArray *contacts, NSError *error) {
+                //update friends view
+                self.focusedContacts = [[NSMutableArray alloc] initWithArray: contacts];
+                self.friendsView = [[FriendsView alloc] init:self.friendsViewFrame cellCount:6 contacts:contacts];
+                self.friendsView.delegate = self;
+                [self.view addSubview:self.friendsView];
+                //initial and add maskView in front of friendsView
+                self.maskView = [[UIView alloc] initWithFrame:self.friendsViewFrame];
+                [self.view addSubview:self.maskView];
+            }];
         }];
-    }];
+    }
+    
     [self updateBrowseCount];
     ((RotationCell *)self.focusedCell).countLabel.text = [NSString stringWithFormat:@"%ld", self.focusedEmployee.browseCount];
 }
@@ -391,7 +397,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (IBAction)didUpSwipe:(UISwipeGestureRecognizer *)sender {
     //add 1 to the browse count
     self.focusedEmployee.browseCount++;
-
+    self.doUpdate = NO;
     [[BackyardClient sharedInstance] postInterestedWithBackyardId:self.focusedEmployee.backyardId completion:^(id response, NSError *error) {
         NSLog(@"%@", response);
     }];
@@ -424,7 +430,7 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark - InvisibleButtonDelegate
 - (void) invisibleButtonAction:(UIButton *)sender {
     //sender.tag; // index of the touched button
-
+    self.doUpdate = NO;
     NSString *urlStr = [self.focusedContacts[sender.tag] tumblrUrl];
     NSURL *url = [NSURL URLWithString:urlStr];
     if ([urlStr length] > 17) {
